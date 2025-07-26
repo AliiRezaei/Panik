@@ -238,11 +238,11 @@ void JointStatesPublisherTask(void *argument)
 
 		// Simulate joint values
 		for (size_t i = 0; i < NUM_JOINTS; i++) {
-//			joint_state_msg.position.data[i] = PCA9548a.position[i];
-//			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
-			joint_state_msg.position.data[i] = joint_desired_msg.position.data[i];
-			joint_state_msg.velocity.data[i] = joint_desired_msg.velocity.data[i];
-			joint_state_msg.effort.data[i]   = joint_desired_msg.effort.data[i];;
+			joint_state_msg.position.data[i] = PCA9548a.position[i];
+			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
+//			joint_state_msg.position.data[i] = joint_desired_msg.position.data[i];
+//			joint_state_msg.velocity.data[i] = joint_desired_msg.velocity.data[i];
+//			joint_state_msg.effort.data[i]   = joint_desired_msg.effort.data[i];;
 		}
 
 		// Publish the message
@@ -253,7 +253,7 @@ void JointStatesPublisherTask(void *argument)
 
 		GPIOB->ODR ^= GPIO_ODR_OD4;
 		HAL_IWDG_Refresh(&hiwdg);
-		osDelay(pdMS_TO_TICKS(10));
+		osDelay(pdMS_TO_TICKS(1));
 	}
 }
 

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "drive_base_msgs__py",
+		"source" : "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/drive_base_msgs__py"
+	}
+}

@@ -1,0 +1,196 @@
+#include "FreeRTOS.h"
+#include "task.h"
+#include "main.h"
+#include <rcl/rcl.h>
+#include <rcl/error_handling.h>
+#include <rclc/rclc.h>
+#include <rclc/executor.h>
+#include <uxr/client/transport.h>
+#include <rmw_microxrcedds_c/config.h>
+#include <rmw_microros/rmw_microros.h>
+#include <sensor_msgs/msg/joint_state.h>
+#include <rosidl_runtime_c/string_functions.h>
+#include <rosidl_runtime_c/primitives_sequence_functions.h>
+#include <sensor_msgs/msg/detail/joint_state__functions.h>
+#define NUM_JOINTS (3U)
+typedef StaticTask_t osStaticThreadDef_t;
+rcl_node_t node;
+rclc_support_t support;
+rcl_allocator_t allocator;
+rclc_executor_t executor;
+PCA9548a_s PCA9548a;
+sensor_msgs__msg__JointState joint_desired_msg;
+osThreadId_t jointStatesPublisherTaskHandle;
+uint32_t jointStatesPublisherTaskBuffer[ 1024 * 3 ];
+osStaticThreadDef_t jointStatesPublisherTaskControlBlock;
+const osThreadAttr_t jointStatesPublisherTask_attributes = {
+		.name = "publisherTask",
+		.cb_mem = &jointStatesPublisherTaskControlBlock,
+		.cb_size = sizeof(jointStatesPublisherTaskControlBlock),
+		.stack_mem = &jointStatesPublisherTaskBuffer[0],
+		.stack_size = sizeof(jointStatesPublisherTaskBuffer),
+		.priority = (osPriority_t) osPriorityNormal,
+};
+osThreadId_t jointDesiredSubscriberTaskHandle;
+uint32_t jointDesiredSubscriberTaskBuffer[ 1024 * 3 ];
+osStaticThreadDef_t jointDesiredSubscriberTaskControlBlock;
+const osThreadAttr_t jointDesiredSubscriberTask_attributes = {
+		.name = "publisherTask",
+		.cb_mem = &jointDesiredSubscriberTaskControlBlock,
+		.cb_size = sizeof(jointDesiredSubscriberTaskControlBlock),
+		.stack_mem = &jointDesiredSubscriberTaskBuffer[0],
+		.stack_size = sizeof(jointDesiredSubscriberTaskBuffer),
+		.priority = (osPriority_t) osPriorityNormal,
+};
+osThreadId_t initTaskHandle;
+uint32_t initTaskBuffer[ 1024 * 2 ];
+osStaticThreadDef_t initTaskControlBlock;
+const osThreadAttr_t initTask_attributes = {
+		.name = "initTask",
+		.cb_mem = &initTaskControlBlock,
+		.cb_size = sizeof(initTaskControlBlock),
+		.stack_mem = &initTaskBuffer[0],
+		.stack_size = sizeof(initTaskBuffer),
+		.priority = (osPriority_t) osPriorityHigh,
+};
+bool cubemx_transport_open(struct uxrCustomTransport * transport);
+bool cubemx_transport_close(struct uxrCustomTransport * transport);
+size_t cubemx_transport_write(struct uxrCustomTransport* transport, const uint8_t * buf, size_t len, uint8_t * err);
+size_t cubemx_transport_read(struct uxrCustomTransport* transport, uint8_t* buf, size_t len, int timeout, uint8_t* err);
+void * microros_allocate(size_t size, void * state);
+void microros_deallocate(void * pointer, void * state);
+void * microros_reallocate(void * pointer, size_t size, void * state);
+void * microros_zero_allocate(size_t number_of_elements, size_t size_of_element, void * state);
+void JointStateCallback(const void *msgin);
+void JointStatesPublisherTask(void *argument);
+void JointDesiredSubscriberTask(void *argument);
+void InitTask(void *argument);
+void MicroROSInit(void);
+void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+void MX_FREERTOS_Init(void) {
+	initTaskHandle = osThreadNew(InitTask, NULL, &initTask_attributes);
+	jointStatesPublisherTaskHandle = osThreadNew(JointStatesPublisherTask, NULL, &jointStatesPublisherTask_attributes);
+	jointDesiredSubscriberTaskHandle = osThreadNew(JointDesiredSubscriberTask, NULL, &jointDesiredSubscriberTask_attributes);
+}
+void JointStatesPublisherTask(void *argument)
+{
+	// Declare handles
+	rcl_publisher_t publisher;
+	sensor_msgs__msg__JointState joint_state_msg;
+
+	// Initialize publisher
+	rclc_publisher_init_default(
+			&publisher,
+			&node,
+			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
+			"joint_states");
+	sensor_msgs__msg__JointState__init(&joint_state_msg);
+	// Initialize string and double sequences
+	rosidl_runtime_c__String__Sequence__init(&joint_state_msg.name, NUM_JOINTS);
+	rosidl_runtime_c__double__Sequence__init(&joint_state_msg.position, NUM_JOINTS);
+	rosidl_runtime_c__double__Sequence__init(&joint_state_msg.velocity, NUM_JOINTS);
+	rosidl_runtime_c__double__Sequence__init(&joint_state_msg.effort, NUM_JOINTS);
+	// Assign joint names
+	rosidl_runtime_c__String__assign(&joint_state_msg.name.data[0], "joint1");
+	rosidl_runtime_c__String__assign(&joint_state_msg.name.data[1], "joint2");
+	rosidl_runtime_c__String__assign(&joint_state_msg.name.data[2], "joint3");
+	// Initialize joint values
+	for (size_t i = 0; i < NUM_JOINTS; i++) {
+		joint_state_msg.position.data[i] = 0.0;
+		joint_state_msg.velocity.data[i] = 0.0;
+		joint_state_msg.effort.data[i]   = 0.0;
+	}
+	for (;;)
+	{
+		// Timestamp
+		joint_state_msg.header.stamp.sec = (int32_t)(xTaskGetTickCount() / 1000);
+		joint_state_msg.header.stamp.nanosec = (xTaskGetTickCount() % 1000) * 1000000;
+		// Simulate joint values
+		for (size_t i = 0; i < NUM_JOINTS; i++) {
+			joint_state_msg.position.data[i] = joint_desired_msg.position.data[i];
+			joint_state_msg.velocity.data[i] = joint_desired_msg.velocity.data[i];
+			joint_state_msg.effort.data[i]   = 0.0;
+		}
+		// Publish the message
+		rcl_ret_t ret = rcl_publish(&publisher, &joint_state_msg, NULL);
+		if (ret != RCL_RET_OK) {
+			printf("Failed to publish JointState message (line %d)\n", __LINE__);
+		}
+		GPIOB->ODR ^= GPIO_ODR_OD4;
+		HAL_IWDG_Refresh(&hiwdg);
+		osDelay(pdMS_TO_TICKS(20));
+	}
+}
+void JointDesiredSubscriberTask(void *argument)
+{
+	// Declare handles
+	rcl_subscription_t subscriber;
+	// Initialize subscriber
+	rclc_subscription_init_default(
+			&subscriber,
+			&node,
+			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
+			"joint_desireds");
+	// Initialize local storage message
+	sensor_msgs__msg__JointState__init(&joint_desired_msg);
+	rosidl_runtime_c__double__Sequence__init(&joint_desired_msg.position, NUM_JOINTS);
+	for (size_t i = 0; i < NUM_JOINTS; i++) {
+		joint_desired_msg.position.data[i] = 0.0;
+	}
+	// Spin loop
+	for (;;)
+	{
+		rclc_executor_init(&executor, &support.context, 1, &allocator);
+		// Add subscription with callback
+		rclc_executor_add_subscription(
+				&executor,
+				&subscriber,
+				&joint_desired_msg,
+				&JointStateCallback,
+				ON_NEW_DATA);
+		rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));  // check every 100ms
+		rclc_executor_fini(&executor);
+		osDelay(pdMS_TO_TICKS(100));
+	}
+}
+void JointStateCallback(const void *msgin)
+{
+	const sensor_msgs__msg__JointState *msg = (const sensor_msgs__msg__JointState *)msgin;
+
+	if (msg->position.size >= NUM_JOINTS) {
+		for (size_t i = 0; i < NUM_JOINTS; i++) {
+			joint_desired_msg.position.data[i] = msg->position.data[i];
+		}
+	}
+	GPIOB->ODR ^= GPIO_ODR_OD5;
+}
+void MicroROSInit(void)
+{
+	// Set up micro-ROS UART transport
+	rmw_uros_set_custom_transport(
+			true,
+			(void *) &huart1,
+			cubemx_transport_open,
+			cubemx_transport_close,
+			cubemx_transport_write,
+			cubemx_transport_read);
+	rcl_allocator_t freeRTOS_allocator = rcutils_get_zero_initialized_allocator();
+	freeRTOS_allocator.allocate = microros_allocate;
+	freeRTOS_allocator.deallocate = microros_deallocate;
+	freeRTOS_allocator.reallocate = microros_reallocate;
+	freeRTOS_allocator.zero_allocate =  microros_zero_allocate;
+	if (!rcutils_set_default_allocator(&freeRTOS_allocator)) {
+		printf("Error on default allocators (line %d)\n", __LINE__);
+	}
+	allocator = rcl_get_default_allocator();
+	//create init_options
+	rclc_support_init(&support, 0, NULL, &allocator);
+	// create node
+	rclc_node_init_default(&node, "cubemx_node", "", &support);
+}
+void InitTask(void *argument)
+{
+    MicroROSInit();
+    // Once done, delete this task
+    vTaskDelete(NULL);
+}

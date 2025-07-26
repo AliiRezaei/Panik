@@ -1,0 +1,9 @@
+Cloning into 'xrceagent'...
+HEAD is now at 7362281 Release v2.4.3
+Cloning into 'spdlog'...
+gmake[5]: *** [CMakeFiles/spdlog.dir/build.make:99: spdlog/src/spdlog-stamp/spdlog-download] Interrupt
+gmake[4]: *** [CMakeFiles/Makefile2:85: CMakeFiles/spdlog.dir/all] Interrupt
+gmake[3]: *** [Makefile:91: all] Interrupt
+gmake[2]: *** [CMakeFiles/xrceagent.dir/build.make:86: agent/src/xrceagent-stamp/xrceagent-build] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/xrceagent.dir/all] Interrupt
+gmake: *** [Makefile:91: all] Interrupt

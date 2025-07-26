@@ -2,5 +2,6 @@
 stm32_ws/build/
 
 stm32_ws/micro_ros_stm32cubemx_utils/
-
+stm32_ws/.vscode
+stm32_ws/.settings
 

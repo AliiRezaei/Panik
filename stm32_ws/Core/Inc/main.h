@@ -44,6 +44,7 @@ extern "C" {
 #include "usart.h"
 #include "tim.h"
 #include "gpio.h"
+#include "pid.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

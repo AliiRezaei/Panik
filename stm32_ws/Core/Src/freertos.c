@@ -47,6 +47,7 @@ typedef StaticTask_t osStaticThreadDef_t;
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define NUM_JOINTS (3U)
+#define _constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -106,6 +107,19 @@ const osThreadAttr_t jointStatesReadTask_attributes = {
 		.priority = (osPriority_t) osPriorityNormal,
 };
 
+/* Definitions for jointStatesControlTask */
+osThreadId_t jointStatesControlTaskHandle;
+uint32_t jointStatesControlTaskBuffer[ 1024 * 1 ];
+osStaticThreadDef_t jointStatesControlTaskControlBlock;
+const osThreadAttr_t jointStatesControlTask_attributes = {
+	.name = "jointStatesControlTask",
+	.cb_mem = &jointStatesControlTaskControlBlock,
+	.cb_size = sizeof(jointStatesControlTaskControlBlock),
+	.stack_mem = &jointStatesControlTaskBuffer[0],
+	.stack_size = sizeof(jointStatesControlTaskBuffer),
+	.priority = (osPriority_t) osPriorityNormal,
+};
+
 /* Definitions for initTask */
 osThreadId_t initTaskHandle;
 uint32_t initTaskBuffer[ 1024 * 2 ];
@@ -136,9 +150,13 @@ void JointStateCallback(const void *msgin);
 void JointStatesPublisherTask(void *argument);
 void JointDesiredSubscriberTask(void *argument);
 void JointStatesReadTask(void *argument);
+void JointStatesControlTask(void *argument);
 void InitTask(void *argument);
 void MicroROSInit(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
+
+void ControlLoop(float e, size_t joint_id);
+void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id);
 
 /**
  * @brief  FreeRTOS initialization
@@ -177,6 +195,9 @@ void MX_FREERTOS_Init(void) {
 	/* add threads, ... */
 	/* creation of jointStatesReadTask */
 	jointStatesReadTaskHandle = osThreadNew(JointStatesReadTask, NULL, &jointStatesReadTask_attributes);
+
+	/* creation of jointStatesControlTask */
+	jointStatesControlTaskHandle = osThreadNew(JointStatesControlTask, NULL, &jointStatesControlTask_attributes);
 
 	/* USER CODE END RTOS_THREADS */
 
@@ -296,6 +317,22 @@ void JointStatesReadTask(void *argument)
 	}
 }
 
+void JointStatesControlTask(void *argument)
+{
+	for (;;)
+	{
+		for (size_t joint_id = 0; joint_id < NUM_JOINTS; joint_id++) {
+			// error calculation
+			float e = joint_desired_msg.position.data[joint_id] - joint_state_msg.position.data[joint_id];
+
+			// run control loop
+			ControlLoop(e, joint_id);
+			osDelay(pdMS_TO_TICKS(1));
+		}
+		osDelay(pdMS_TO_TICKS(10));
+	}
+}
+
 void JointStateCallback(const void *msgin)
 {
 	const sensor_msgs__msg__JointState *msg = (const sensor_msgs__msg__JointState *)msgin;
@@ -381,6 +418,80 @@ void MicroROSInit(void)
 
 	microros_initialized = 1;
 
+}
+
+void ControlLoop(float e, size_t joint_id)
+{
+//	float elec_angle = pid_Operator(pid, e);
+	float elec_angle = 0.0;
+	float Uq = 15.0, Ud = 0.0;
+
+	// sin cos of elec_angle
+	float s_elec_angle = sin(elec_angle);
+	float c_elec_angle = cos(elec_angle);
+
+	// inverse park transform
+	float Ualpha = c_elec_angle * Ud - s_elec_angle * Uq;
+	float Ubeta  = s_elec_angle * Ud + c_elec_angle * Uq;
+
+	// clarke transform
+	float Ua = Ualpha;
+	float Ub = - 1/2 * Ualpha + sqrt(3)/2 * Ubeta;
+	float Uc = - 1/2 * Ualpha - sqrt(3)/2 * Ubeta;
+
+	// center
+	float center = 15 / 2;
+
+	// midpoint clamp
+	float Umin = fmin(Ua, fmin(Ub, Uc));
+	float Umax = fmax(Ua, fmax(Ub, Uc));
+	center = center - (Umax + Umin) / 2;
+
+	// centered modulation
+	Ua = _constrain(Ua - Umin, 0.0, 24.0);
+	Ub = _constrain(Ub - Umin, 0.0, 24.0);
+	Uc = _constrain(Uc - Umin, 0.0, 24.0);
+
+	float dc_a = _constrain(Ua / 24, 0.0, 1.0);
+	float dc_b = _constrain(Ub / 24, 0.0, 1.0);
+	float dc_c = _constrain(Uc / 24, 0.0, 1.0);
+
+	SetPWM(dc_a, dc_b, dc_c, joint_id);
+}
+
+void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id)
+{
+	uint32_t ticks = 0;
+	switch (joint_id) {
+	case 0:
+		// PWM counts
+		ticks = TIM1->ARR + 1;
+
+		// write duty cycle in timer 1
+		TIM1->CCR1 = (ticks * dc_phase_a);
+		TIM1->CCR2 = (ticks * dc_phase_b);
+		TIM1->CCR3 = (ticks * dc_phase_c);
+	case 1:
+		// PWM counts
+		ticks = TIM2->ARR + 1;
+
+		// write duty cycle in timer 2
+		TIM2->CCR1 = (ticks * dc_phase_a);
+		TIM2->CCR2 = (ticks * dc_phase_b);
+		TIM2->CCR3 = (ticks * dc_phase_c);
+	case 2:
+		// PWM counts
+		ticks = TIM3->ARR + 1;
+
+		// write duty cycle in timer 3
+		TIM3->CCR1 = (ticks * dc_phase_a);
+		TIM3->CCR2 = (ticks * dc_phase_b);
+		TIM3->CCR3 = (ticks * dc_phase_c);
+
+		break;
+	default:
+		break;
+	}
 }
 
 void InitTask(void *argument)

@@ -47,7 +47,6 @@ typedef StaticTask_t osStaticThreadDef_t;
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define NUM_JOINTS (3U)
-#define _constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -67,6 +66,8 @@ sensor_msgs__msg__JointState joint_state_msg;
 rcl_publisher_t publisher;
 rcl_subscription_t subscriber;
 bool microros_initialized = 0;
+bool controller_initialized = 0;
+PIDController_s pid[NUM_JOINTS];
 /* USER CODE END Variables */
 /* Definitions for jointStatesPublisherTask */
 osThreadId_t jointStatesPublisherTaskHandle;
@@ -96,7 +97,7 @@ const osThreadAttr_t jointDesiredSubscriberTask_attributes = {
 
 /* Definitions for jointStatesReadTask */
 osThreadId_t jointStatesReadTaskHandle;
-uint32_t jointStatesReadTaskBuffer[ 1024 * 1 ];
+uint32_t jointStatesReadTaskBuffer[ 512 ];
 osStaticThreadDef_t jointStatesReadTaskControlBlock;
 const osThreadAttr_t jointStatesReadTask_attributes = {
 		.name = "jointStatesReadTask",
@@ -109,7 +110,7 @@ const osThreadAttr_t jointStatesReadTask_attributes = {
 
 /* Definitions for jointStatesControlTask */
 osThreadId_t jointStatesControlTaskHandle;
-uint32_t jointStatesControlTaskBuffer[ 1024 * 1 ];
+uint32_t jointStatesControlTaskBuffer[ 512 ];
 osStaticThreadDef_t jointStatesControlTaskControlBlock;
 const osThreadAttr_t jointStatesControlTask_attributes = {
 	.name = "jointStatesControlTask",
@@ -122,7 +123,7 @@ const osThreadAttr_t jointStatesControlTask_attributes = {
 
 /* Definitions for initTask */
 osThreadId_t initTaskHandle;
-uint32_t initTaskBuffer[ 1024 * 2 ];
+uint32_t initTaskBuffer[ 1024 * 1 ];
 osStaticThreadDef_t initTaskControlBlock;
 const osThreadAttr_t initTask_attributes = {
 		.name = "initTask",
@@ -152,12 +153,12 @@ void JointDesiredSubscriberTask(void *argument);
 void JointStatesReadTask(void *argument);
 void JointStatesControlTask(void *argument);
 void InitTask(void *argument);
-void MicroROSInit(void);
+void InitMicroROS(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 void ControlLoop(float e, size_t joint_id);
 void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id);
-
+void InitControllers(void);
 /**
  * @brief  FreeRTOS initialization
  * @param  None
@@ -225,11 +226,6 @@ void JointStatesPublisherTask(void *argument)
 			&node,
 			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
 			"joint_states");
-//	rclc_publisher_init_default(
-//			&publisher,
-//			&node,
-//			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
-//			"joint_states");
 
 	sensor_msgs__msg__JointState__init(&joint_state_msg);
 
@@ -310,7 +306,7 @@ void JointStatesReadTask(void *argument)
 	float derivativeT = 0.1, filterT = 0.01;
 	for (;;)
 	{
-		for (size_t i = 0; i < NUM_JOINTS; i++) {
+		for (uint8_t i = 0; i < NUM_JOINTS; i++) {
 			pca9548a_GetStates(&PCA9548a, i, derivativeT, filterT);
 		}
 		osDelay(pdMS_TO_TICKS(10));
@@ -319,6 +315,10 @@ void JointStatesReadTask(void *argument)
 
 void JointStatesControlTask(void *argument)
 {
+	while (!controller_initialized) {
+		osDelay(10);
+	}
+
 	for (;;)
 	{
 		for (size_t joint_id = 0; joint_id < NUM_JOINTS; joint_id++) {
@@ -329,7 +329,7 @@ void JointStatesControlTask(void *argument)
 			ControlLoop(e, joint_id);
 			osDelay(pdMS_TO_TICKS(1));
 		}
-		osDelay(pdMS_TO_TICKS(10));
+//		osDelay(pdMS_TO_TICKS(10));
 	}
 }
 
@@ -347,7 +347,7 @@ void JointStateCallback(const void *msgin)
 	GPIOB->ODR ^= GPIO_ODR_OD5;
 }
 
-void MicroROSInit(void)
+void InitMicroROS(void)
 {
 	// Set up micro-ROS UART transport
 	rmw_uros_set_custom_transport(
@@ -382,11 +382,6 @@ void MicroROSInit(void)
 			&node,
 			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
 			"joint_desireds");
-//	rclc_subscription_init_default(
-//			&subscriber,
-//			&node,
-//			ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, JointState),
-//			"joint_desireds");
 
 	// Initialize local storage message
 	rosidl_runtime_c__String__Sequence__init(&joint_desired_msg.name, NUM_JOINTS);
@@ -422,8 +417,8 @@ void MicroROSInit(void)
 
 void ControlLoop(float e, size_t joint_id)
 {
-//	float elec_angle = pid_Operator(pid, e);
-	float elec_angle = 0.0;
+	float elec_angle = pid_Operator(&pid[joint_id], e);
+//	float elec_angle = 0.0;
 	float Uq = 15.0, Ud = 0.0;
 
 	// sin cos of elec_angle
@@ -471,6 +466,7 @@ void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_i
 		TIM1->CCR1 = (ticks * dc_phase_a);
 		TIM1->CCR2 = (ticks * dc_phase_b);
 		TIM1->CCR3 = (ticks * dc_phase_c);
+		break;
 	case 1:
 		// PWM counts
 		ticks = TIM2->ARR + 1;
@@ -479,6 +475,7 @@ void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_i
 		TIM2->CCR1 = (ticks * dc_phase_a);
 		TIM2->CCR2 = (ticks * dc_phase_b);
 		TIM2->CCR3 = (ticks * dc_phase_c);
+		break;
 	case 2:
 		// PWM counts
 		ticks = TIM3->ARR + 1;
@@ -487,16 +484,29 @@ void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_i
 		TIM3->CCR1 = (ticks * dc_phase_a);
 		TIM3->CCR2 = (ticks * dc_phase_b);
 		TIM3->CCR3 = (ticks * dc_phase_c);
-
 		break;
 	default:
 		break;
 	}
 }
 
+void InitControllers(void)
+{
+	for (size_t i = 0; i < NUM_JOINTS; i++) {
+		pid_Init(&pid[i]);
+		pid_SetGains(&pid[i], 0.01, 20.0, 0.0, 50.0, 1000.0);
+	}
+
+	controller_initialized = 1;
+}
+
 void InitTask(void *argument)
 {
-    MicroROSInit();
+	// Init Micro-ROS
+    InitMicroROS();
+
+    // Init joints controller
+    InitControllers();
 
     // Once done, delete this task
     vTaskDelete(NULL);

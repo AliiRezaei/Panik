@@ -6,6 +6,10 @@ stm32_ws/micro_ros_stm32cubemx_utils/
 .vscode
 .settings
 
+*.log
+
+*.sh.env
+
 #microros_ws/
 #!microros_ws/src/python_plotter/
 #!microros_ws/build/python_plotter/

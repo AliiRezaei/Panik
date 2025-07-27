@@ -1,0 +1,32 @@
+[0.594s] Invoking command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/python_plotter': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_plotter build --build-base /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build install --record /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/install.log --single-version-externally-managed install_data
+[0.755s] running egg_info
+[0.755s] creating ../../build/python_plotter/python_plotter.egg-info
+[0.765s] writing ../../build/python_plotter/python_plotter.egg-info/PKG-INFO
+[0.765s] writing dependency_links to ../../build/python_plotter/python_plotter.egg-info/dependency_links.txt
+[0.766s] writing requirements to ../../build/python_plotter/python_plotter.egg-info/requires.txt
+[0.766s] writing top-level names to ../../build/python_plotter/python_plotter.egg-info/top_level.txt
+[0.766s] writing manifest file '../../build/python_plotter/python_plotter.egg-info/SOURCES.txt'
+[0.788s] reading manifest file '../../build/python_plotter/python_plotter.egg-info/SOURCES.txt'
+[0.789s] writing manifest file '../../build/python_plotter/python_plotter.egg-info/SOURCES.txt'
+[0.789s] running build
+[0.789s] running build_py
+[0.789s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build
+[0.789s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build/lib
+[0.789s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build/lib/python_plotter
+[0.789s] copying python_plotter/__init__.py -> /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build/lib/python_plotter
+[0.789s] running install
+[0.794s] running install_lib
+[0.805s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages/python_plotter
+[0.805s] copying /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build/lib/python_plotter/__init__.py -> /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages/python_plotter
+[0.805s] byte-compiling /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages/python_plotter/__init__.py to __init__.cpython-312.pyc
+[0.806s] running install_data
+[0.806s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/share/ament_index
+[0.806s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/share/ament_index/resource_index
+[0.806s] creating /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/share/ament_index/resource_index/packages
+[0.806s] copying resource/python_plotter -> /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/share/ament_index/resource_index/packages
+[0.806s] copying package.xml -> /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/share/python_plotter
+[0.806s] running install_egg_info
+[0.818s] Copying ../../build/python_plotter/python_plotter.egg-info to /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages/python_plotter-0.0.0-py3.12.egg-info
+[0.818s] running install_scripts
+[0.894s] writing list of installed files to '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/install.log'
+[0.912s] Invoked command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/python_plotter' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/python_plotter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_plotter build --build-base /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/build install --record /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/python_plotter/install.log --single-version-externally-managed install_data

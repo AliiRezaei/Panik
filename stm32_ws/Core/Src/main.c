@@ -91,6 +91,9 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
 //  MX_IWDG_Init();
+  tim_TIM1_3PWM_Config();
+  tim_TIM2_3PWM_Config();
+  tim_TIM3_3PWM_Config();
 
   /* USER CODE BEGIN 2 */
   RCC->AHB1ENR |=  RCC_AHB1ENR_GPIOBEN;

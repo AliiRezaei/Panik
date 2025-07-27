@@ -41,6 +41,7 @@ Peripherals/Src/gpio.c \
 Core/Src/freertos.c \
 Peripherals/Src/dma.c \
 Peripherals/Src/usart.c \
+Utils/Src/pid.c \
 Devices/Src/as5600.c \
 Devices/Src/pca9548a.c \
 Core/Src/stm32f4xx_it.c \
@@ -146,6 +147,7 @@ C_DEFS =  \
 AS_INCLUDES =  \
 -ICore/Inc \
 -IPeripherals/Inc \
+-IUtils/Inc \
 -IDevices/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
@@ -159,6 +161,7 @@ AS_INCLUDES =  \
 C_INCLUDES =  \
 -ICore/Inc \
 -IPeripherals/Inc \
+-IUtils/Inc \
 -IDevices/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \

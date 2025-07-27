@@ -158,6 +158,7 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 void ControlLoop(float e, size_t joint_id);
 void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id);
+float TorqueEstimation(uint8_t motor_id);
 void InitControllers(void);
 /**
  * @brief  FreeRTOS initialization
@@ -257,9 +258,7 @@ void JointStatesPublisherTask(void *argument)
 		for (size_t i = 0; i < NUM_JOINTS; i++) {
 			joint_state_msg.position.data[i] = PCA9548a.position[i];
 			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
-//			joint_state_msg.position.data[i] = joint_desired_msg.position.data[i];
-//			joint_state_msg.velocity.data[i] = joint_desired_msg.velocity.data[i];
-//			joint_state_msg.effort.data[i]   = joint_desired_msg.effort.data[i];;
+			joint_state_msg.effort.data[i]   = TorqueEstimation(i);
 		}
 
 		// Publish the message
@@ -498,6 +497,43 @@ void InitControllers(void)
 	}
 
 	controller_initialized = 1;
+}
+
+float TorqueEstimation(uint8_t motor_id)
+{
+	float Kt = 1.9137; // torque constant for XM9025GB-SR
+	uint32_t ticks = 0;
+	float    dc    = 0;
+	switch (motor_id) {
+	case 0:
+		// PWM counts
+		ticks = TIM1->ARR + 1;
+
+		// duty cycle average
+		dc = (float)(TIM1->CCR1 + TIM1->CCR2 + TIM1->CCR3) / (3.0 * ticks);
+		break;
+	case 1:
+		// PWM counts
+		ticks = TIM2->ARR + 1;
+
+		// duty cycle average
+		dc = (float)(TIM2->CCR1 + TIM2->CCR2 + TIM2->CCR3) / (3.0 * ticks);
+		break;
+	case 2:
+		// PWM counts
+		ticks = TIM3->ARR + 1;
+
+		// duty cycle average
+		dc = (float)(TIM3->CCR1 + TIM3->CCR2 + TIM3->CCR3) / (3.0 * ticks);
+		break;
+	default:
+		break;
+	}
+
+	float R = 34.3; // phase resistance
+	float V = 24.0; // phase max voltage
+	float torque = Kt * dc * V / R;
+	return torque;
 }
 
 void InitTask(void *argument)

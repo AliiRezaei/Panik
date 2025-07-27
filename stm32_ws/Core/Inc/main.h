@@ -42,6 +42,7 @@ extern "C" {
 #include "pca9548a.h"
 #include "iwdg.h"
 #include "usart.h"
+#include "tim.h"
 #include "gpio.h"
 /* USER CODE END Includes */
 

@@ -1,0 +1,2 @@
+[console_scripts]
+states_plotter = python_plotter.states_plotter:main

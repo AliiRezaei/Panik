@@ -1,11 +1,11 @@
 {
   "package_name": "micro_ros_msgs",
-  "output_dir": "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_py/micro_ros_msgs",
+  "output_dir": "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_py/micro_ros_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Graph.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Node.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Entity.idl"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Graph.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Node.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Entity.idl"
   ],
   "target_dependencies": [
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -21,8 +21,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Graph.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Node.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Entity.idl"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Graph.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Node.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Entity.idl"
   ]
 }

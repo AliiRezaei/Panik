@@ -23,8 +23,8 @@ drive_base_msgs__msg__TRVCommand__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "drive_base_msgs/msg/detail/command_header__functions.h"
 #include "builtin_interfaces/msg/detail/time__functions.h"
+#include "drive_base_msgs/msg/detail/command_header__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

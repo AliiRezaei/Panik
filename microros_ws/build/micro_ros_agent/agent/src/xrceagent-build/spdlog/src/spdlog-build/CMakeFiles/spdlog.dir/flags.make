@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include
+CXX_INCLUDES = -I/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=c++11 -fPIC
 

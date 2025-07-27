@@ -1,9 +1,9 @@
 {
   "package_name": "drive_base_msgs",
   "non_idl_tuples": [
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs:msg/CommandHeader.msg",
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs:msg/BaseInfo.msg",
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs:msg/CommandStatus.msg",
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs:msg/TRVCommand.msg"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs:msg/CommandHeader.msg",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs:msg/BaseInfo.msg",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs:msg/CommandStatus.msg",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs:msg/TRVCommand.msg"
   ]
 }

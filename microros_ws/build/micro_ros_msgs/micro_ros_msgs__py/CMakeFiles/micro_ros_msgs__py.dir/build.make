@@ -53,29 +53,29 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs
+CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
+CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
 
 # Utility rule file for micro_ros_msgs__py.
 
 # Include any custom commands dependencies for this target.
-include /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/compiler_depend.make
+include /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/compiler_depend.make
 
 # Include the progress variables for this target.
-include /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/progress.make
+include /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/progress.make
 
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph.py
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node.py
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_entity.py
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/__init__.py
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node_s.c
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph.py
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node.py
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_entity.py
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/__init__.py
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node_s.c
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c
 
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -93,8 +93,8 @@ rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/micro_ros_msgs/msg/Graph.idl
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/micro_ros_msgs/msg/Node.idl
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/micro_ros_msgs/msg/Entity.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -123,7 +123,7 @@ rosidl_generator_py/micro_ros_msgs/msg/_node_s.c: rosidl_generator_py/micro_ros_
 rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c
 
-micro_ros_msgs__py: /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py
+micro_ros_msgs__py: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -134,18 +134,18 @@ micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph.py
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node.py
 micro_ros_msgs__py: rosidl_generator_py/micro_ros_msgs/msg/_node_s.c
-micro_ros_msgs__py: /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build.make
+micro_ros_msgs__py: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build.make
 .PHONY : micro_ros_msgs__py
 
 # Rule to build all files generated by this target.
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build: micro_ros_msgs__py
-.PHONY : /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build: micro_ros_msgs__py
+.PHONY : /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build
 
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/clean:
-	cd /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/micro_ros_msgs__py.dir/cmake_clean.cmake
-.PHONY : /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/clean
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/clean:
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/micro_ros_msgs__py.dir/cmake_clean.cmake
+.PHONY : /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/clean
 
-/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/depend:
-	cd /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
-.PHONY : /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/depend
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/depend:
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
+.PHONY : /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/depend
 

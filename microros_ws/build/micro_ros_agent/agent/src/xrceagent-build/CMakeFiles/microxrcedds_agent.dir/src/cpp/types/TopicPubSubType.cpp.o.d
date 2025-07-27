@@ -1,7 +1,7 @@
 CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o: \
- /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent/src/cpp/types/TopicPubSubType.cpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent/src/cpp/types/TopicPubSubType.cpp \
  /usr/include/stdc-predef.h \
- /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/types/TopicPubSubType.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/types/TopicPubSubType.hpp \
  /opt/ros/jazzy/include/fastrtps/fastrtps/TopicDataType.h \
  /opt/ros/jazzy/include/fastrtps/fastdds/dds/topic/TopicDataType.hpp \
  /usr/include/c++/13/functional \

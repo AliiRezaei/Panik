@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs
+CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
+CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
 
 # Utility rule file for micro_ros_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/micro_ros_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/micro_ros_msgs_uninstall.dir/progress.make
 
 CMakeFiles/micro_ros_msgs_uninstall:
-	/usr/bin/cmake -P /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 micro_ros_msgs_uninstall: CMakeFiles/micro_ros_msgs_uninstall
 micro_ros_msgs_uninstall: CMakeFiles/micro_ros_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/micro_ros_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/micro_ros_msgs_uninstall.dir/clean
 
 CMakeFiles/micro_ros_msgs_uninstall.dir/depend:
-	cd /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/micro_ros_msgs_uninstall.dir/depend
 

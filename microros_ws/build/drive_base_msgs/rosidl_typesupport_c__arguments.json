@@ -1,12 +1,12 @@
 {
   "package_name": "drive_base_msgs",
-  "output_dir": "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_typesupport_c/drive_base_msgs",
+  "output_dir": "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_typesupport_c/drive_base_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/CommandHeader.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/BaseInfo.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/CommandStatus.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/TRVCommand.idl"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/CommandHeader.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/BaseInfo.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/CommandStatus.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs:msg/TRVCommand.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -49,10 +49,10 @@
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/CommandHeader.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/BaseInfo.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/CommandStatus.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/TRVCommand.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/CommandHeader.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/BaseInfo.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/CommandStatus.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_adapter/drive_base_msgs/msg/TRVCommand.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",

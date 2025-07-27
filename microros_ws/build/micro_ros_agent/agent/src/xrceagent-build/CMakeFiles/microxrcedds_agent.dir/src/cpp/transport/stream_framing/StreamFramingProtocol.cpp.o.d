@@ -1,8 +1,8 @@
 CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o: \
- /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp \
  /usr/include/stdc-predef.h \
- /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp \
- /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/transport/TransportRc.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent/include/uxr/agent/transport/TransportRc.hpp \
  /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

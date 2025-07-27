@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent
+source_dir=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent
 work_dir=
 

@@ -177,7 +177,7 @@
 [0.148s] INFO:colcon.colcon_core.package_selection:Skipping package 'drive_base_msgs' in 'src/uros/drive_base/drive_base_msgs'
 [0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
 [0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
-[0.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ali/STM32CubeIDE/microros_ws/install
+[0.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install
 [0.152s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
 [0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_args' from command line to '['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli']'
@@ -189,7 +189,7 @@
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs', 'merge_install': False, 'path': '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs', 'merge_install': False, 'path': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs', 'symlink_install': False, 'test_result_base': None}
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_args' from command line to '['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli']'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target' from command line to 'None'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
@@ -199,122 +199,122 @@
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'ament_cmake_args' from command line to 'None'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_cmake_args' from command line to 'None'
 [0.196s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
-[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent', 'merge_install': False, 'path': '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent', 'symlink_install': False, 'test_result_base': None}
+[0.196s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent', 'merge_install': False, 'path': '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent', 'symlink_install': False, 'test_result_base': None}
 [0.196s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
 [0.197s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[0.197s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs' with build type 'ament_cmake'
-[0.197s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs'
+[0.197s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs' with build type 'ament_cmake'
+[0.197s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs'
 [0.200s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
 [0.201s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [0.201s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[0.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs -- -j20 -l20
-[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs -- -j20 -l20
-[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
+[0.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs -- -j20 -l20
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs -- -j20 -l20
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
 [0.503s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
-[0.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
-[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs' for CMake module files
-[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs' for CMake config files
+[0.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs' for CMake module files
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs' for CMake config files
 [0.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
-[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
-[0.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
-[0.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
-[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[0.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[0.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib'
 [0.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
-[0.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
-[0.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
-[0.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
-[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/bin'
-[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
-[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages'
+[0.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[0.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[0.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/bin'
+[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[0.509s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages'
 [0.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'pythonpath')
-[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
-[0.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
-[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
-[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/bin'
-[0.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
-[0.511s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
-[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
-[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
-[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
-[0.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
+[0.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
+[0.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
+[0.510s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/bin'
+[0.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[0.511s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[0.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
 [0.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
-[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs' for CMake module files
-[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs' for CMake config files
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs' for CMake module files
+[0.513s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs' for CMake config files
 [0.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
-[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
-[0.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
-[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
-[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib'
 [0.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
-[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
-[0.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
-[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
-[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/bin'
-[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
-[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/bin'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages'
 [0.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'pythonpath')
-[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
-[0.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
-[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
-[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/bin'
-[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
-[0.516s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
-[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
-[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
-[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
-[0.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
-[0.517s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent' with build type 'ament_cmake'
-[0.517s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ali/STM32CubeIDE/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.ps1'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.dsv'
+[0.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/pythonpath.sh'
+[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/bin'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[0.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[0.517s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent' with build type 'ament_cmake'
+[0.517s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent'
 [0.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [0.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent -- -j20 -l20
-[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent -- -j20 -l20
-[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent
+[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent -- -j20 -l20
+[0.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent -- -j20 -l20
+[0.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent
 [0.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
-[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent' for CMake module files
-[0.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent
-[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent' for CMake config files
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent' for CMake module files
+[0.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent' for CMake config files
 [0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
-[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
-[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
-[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
-[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib'
 [0.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
-[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
-[0.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
-[0.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
-[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/bin'
-[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
-[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib/python3.12/site-packages'
-[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/bin'
-[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
-[0.609s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
-[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
-[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
-[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
-[0.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/bin'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/python3.12/site-packages'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/bin'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[0.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
 [0.611s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
-[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent' for CMake module files
-[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent' for CMake config files
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent' for CMake module files
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent' for CMake config files
 [0.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
-[0.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
-[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
-[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
-[0.612s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib'
+[0.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[0.612s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib'
 [0.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
-[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
-[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
-[0.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
-[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/bin'
-[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
-[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/lib/python3.12/site-packages'
-[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/bin'
-[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
-[0.613s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
-[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
-[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
-[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
-[0.615s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[0.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/bin'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/python3.12/site-packages'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/bin'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[0.615s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
 [0.615s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
 [0.615s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
 [0.616s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
@@ -323,13 +323,13 @@
 [0.622s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
 [0.622s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
 [0.634s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[0.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/microros_ws/install/local_setup.ps1'
-[0.634s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ali/STM32CubeIDE/microros_ws/install/_local_setup_util_ps1.py'
-[0.635s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/microros_ws/install/setup.ps1'
-[0.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/microros_ws/install/local_setup.sh'
-[0.635s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ali/STM32CubeIDE/microros_ws/install/_local_setup_util_sh.py'
-[0.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/microros_ws/install/setup.sh'
-[0.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/microros_ws/install/local_setup.bash'
-[0.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/microros_ws/install/setup.bash'
-[0.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/microros_ws/install/local_setup.zsh'
-[0.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/microros_ws/install/setup.zsh'
+[0.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/local_setup.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/_local_setup_util_ps1.py'
+[0.635s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/setup.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/local_setup.sh'
+[0.635s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/_local_setup_util_sh.py'
+[0.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/setup.sh'
+[0.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/local_setup.bash'
+[0.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/setup.bash'
+[0.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/local_setup.zsh'
+[0.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/setup.zsh'

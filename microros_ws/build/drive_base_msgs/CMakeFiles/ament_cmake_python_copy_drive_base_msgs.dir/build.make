@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs
+CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs
+CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs
 
 # Utility rule file for ament_cmake_python_copy_drive_base_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/compiler_depend.m
 include CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_drive_base_msgs:
-	/usr/bin/cmake -E copy_directory /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/rosidl_generator_py/drive_base_msgs /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/ament_cmake_python/drive_base_msgs/drive_base_msgs
+	/usr/bin/cmake -E copy_directory /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_generator_py/drive_base_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/ament_cmake_python/drive_base_msgs/drive_base_msgs
 
 ament_cmake_python_copy_drive_base_msgs: CMakeFiles/ament_cmake_python_copy_drive_base_msgs
 ament_cmake_python_copy_drive_base_msgs: CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/depend:
-	cd /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs /home/ali/STM32CubeIDE/microros_ws/src/uros/drive_base/drive_base_msgs /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_drive_base_msgs.dir/depend
 

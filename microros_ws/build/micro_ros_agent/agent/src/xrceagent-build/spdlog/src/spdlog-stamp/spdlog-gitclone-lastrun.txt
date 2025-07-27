@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/usr/bin/cmake;-P;/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/tmp/spdlog-gitclone.cmake
-source_dir=/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog
-work_dir=/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src
+command=/usr/bin/cmake;-P;/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/tmp/spdlog-gitclone.cmake
+source_dir=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog
+work_dir=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src
 repository=https://github.com/gabime/spdlog.git
 remote=origin
 init_submodules=TRUE

@@ -28,7 +28,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+        /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL"
-      binary: "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL"
+      source: "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL"
+      binary: "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -50,12 +50,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
+        Change Dir: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
         
         Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c5fdc/fast
-        gmake[6]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
+        gmake[6]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
         /usr/bin/gmake  -f CMakeFiles/cmTC_c5fdc.dir/build.make CMakeFiles/cmTC_c5fdc.dir/build
-        gmake[7]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
+        gmake[7]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
         Building CXX object CMakeFiles/cmTC_c5fdc.dir/CMakeCXXCompilerABI.cpp.o
         /usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_c5fdc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
@@ -113,8 +113,8 @@ events:
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5fdc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c5fdc.'
          /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCermxy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c5fdc /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_c5fdc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
         COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c5fdc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c5fdc.'
-        gmake[7]: Leaving directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
-        gmake[6]: Leaving directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
+        gmake[7]: Leaving directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
+        gmake[6]: Leaving directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL'
         
       exitCode: 0
   -
@@ -154,12 +154,12 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
+        ignore line: [Change Dir: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
         ignore line: []
         ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c5fdc/fast]
-        ignore line: [gmake[6]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
+        ignore line: [gmake[6]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
         ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c5fdc.dir/build.make CMakeFiles/cmTC_c5fdc.dir/build]
-        ignore line: [gmake[7]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
+        ignore line: [gmake[7]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-IuvDXL']
         ignore line: [Building CXX object CMakeFiles/cmTC_c5fdc.dir/CMakeCXXCompilerABI.cpp.o]
         ignore line: [/usr/bin/c++   -fPIE   -v -o CMakeFiles/cmTC_c5fdc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
@@ -288,8 +288,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue"
-      binary: "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue"
+      source: "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue"
+      binary: "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -299,19 +299,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
+        Change Dir: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
         
         Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5001c/fast
-        gmake[6]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
+        gmake[6]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
         /usr/bin/gmake  -f CMakeFiles/cmTC_5001c.dir/build.make CMakeFiles/cmTC_5001c.dir/build
-        gmake[7]: Entering directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
+        gmake[7]: Entering directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
         Building CXX object CMakeFiles/cmTC_5001c.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++11 -fPIE -o CMakeFiles/cmTC_5001c.dir/src.cxx.o -c /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue/src.cxx
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++11 -fPIE -o CMakeFiles/cmTC_5001c.dir/src.cxx.o -c /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue/src.cxx
         Linking CXX executable cmTC_5001c
         /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5001c.dir/link.txt --verbose=1
         /usr/bin/c++ CMakeFiles/cmTC_5001c.dir/src.cxx.o -o cmTC_5001c 
-        gmake[7]: Leaving directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
-        gmake[6]: Leaving directory '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
+        gmake[7]: Leaving directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
+        gmake[6]: Leaving directory '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build/CMakeFiles/CMakeScratch/TryCompile-VU8Gue'
         
       exitCode: 0
 ...

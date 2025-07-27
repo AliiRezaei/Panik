@@ -1,16 +1,16 @@
 {
   "package_name": "micro_ros_msgs",
-  "output_dir": "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_c/micro_ros_msgs",
+  "output_dir": "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_c/micro_ros_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Graph.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Node.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Entity.idl"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Graph.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Node.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Entity.idl"
   ],
   "ros_interface_files": [
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Graph.msg",
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Node.msg",
-    "/home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Entity.msg"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Graph.msg",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Node.msg",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Entity.msg"
   ],
   "target_dependencies": [
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -32,13 +32,13 @@
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Graph.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Node.idl",
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Entity.idl"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Graph.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Node.idl",
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs/msg/Entity.idl"
   ],
   "type_description_tuples": [
-    "msg/Graph.idl:/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Graph.json",
-    "msg/Node.idl:/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Node.json",
-    "msg/Entity.idl:/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Entity.json"
+    "msg/Graph.idl:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Graph.json",
+    "msg/Node.idl:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Node.json",
+    "msg/Entity.idl:/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs/msg/Entity.json"
   ]
 }

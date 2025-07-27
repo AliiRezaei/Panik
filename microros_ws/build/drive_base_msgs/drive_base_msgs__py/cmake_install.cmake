@@ -1,8 +1,8 @@
-# Install script for directory: /home/ali/STM32CubeIDE/microros_ws/build/drive_base_msgs/drive_base_msgs__py
+# Install script for directory: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/drive_base_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/microros_ws/install/drive_base_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/drive_base_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

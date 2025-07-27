@@ -1,6 +1,6 @@
 
-set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2" CACHE PATH "Initial cache" FORCE)
-set(CMAKE_PREFIX_PATH "/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent;/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent" CACHE PATH "Initial cache" FORCE)
+set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2" CACHE PATH "Initial cache" FORCE)
+set(CMAKE_PREFIX_PATH "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent;/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent" CACHE PATH "Initial cache" FORCE)
 set(BUILD_SHARED_LIBS "OFF" CACHE BOOL "Initial cache" FORCE)
 set(CMAKE_TOOLCHAIN_FILE "" CACHE PATH "Initial cache" FORCE)
 set(CMAKE_BUILD_TYPE "" CACHE STRING "Initial cache" FORCE)

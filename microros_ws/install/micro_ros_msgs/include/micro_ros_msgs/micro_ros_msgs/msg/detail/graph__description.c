@@ -23,8 +23,8 @@ micro_ros_msgs__msg__Graph__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "micro_ros_msgs/msg/detail/entity__functions.h"
 #include "micro_ros_msgs/msg/detail/node__functions.h"
+#include "micro_ros_msgs/msg/detail/entity__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

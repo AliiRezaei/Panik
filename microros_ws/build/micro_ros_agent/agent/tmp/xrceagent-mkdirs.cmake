@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build"
-  "/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_agent"
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/tmp"
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp"
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src"
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/tmp"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src"
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp${cfgdir}") # cfgdir has leading slash
 endif()

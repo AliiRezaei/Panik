@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs
+CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
+CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/CMakeFiles /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -415,7 +415,7 @@ micro_ros_msgs__py: cmake_check_build_system
 
 # fast build rule for target.
 micro_ros_msgs__py/fast:
-	$(MAKE) $(MAKESILENT) -f /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build.make /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build
+	$(MAKE) $(MAKESILENT) -f /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build.make /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/micro_ros_msgs__py/CMakeFiles/micro_ros_msgs__py.dir/build
 .PHONY : micro_ros_msgs__py/fast
 
 rosidl_generator_c/micro_ros_msgs/msg/detail/entity__description.o: rosidl_generator_c/micro_ros_msgs/msg/detail/entity__description.c.o

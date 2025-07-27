@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs
+CMAKE_SOURCE_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs
+CMAKE_BINARY_DIR = /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs
 
 # Utility rule file for micro_ros_msgs.
 
@@ -66,9 +66,9 @@ include CMakeFiles/micro_ros_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/micro_ros_msgs.dir/progress.make
 
-CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Graph.msg
-CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Node.msg
-CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs/msg/Entity.msg
+CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Graph.msg
+CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Node.msg
+CMakeFiles/micro_ros_msgs: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Entity.msg
 
 micro_ros_msgs: CMakeFiles/micro_ros_msgs
 micro_ros_msgs: CMakeFiles/micro_ros_msgs.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/micro_ros_msgs.dir/clean:
 .PHONY : CMakeFiles/micro_ros_msgs.dir/clean
 
 CMakeFiles/micro_ros_msgs.dir/depend:
-	cd /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/micro_ros_msgs.dir/depend
 

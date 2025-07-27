@@ -3,21 +3,21 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-if(EXISTS "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt" AND EXISTS "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt" AND
-  "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt" IS_NEWER_THAN "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt")
+if(EXISTS "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt" AND EXISTS "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt" AND
+  "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt" IS_NEWER_THAN "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt")
   message(STATUS
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'"
+    "'/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'"
   )
   return()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent'")
+  message(FATAL_ERROR "Failed to remove directory: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -27,7 +27,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "/usr/bin/git"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/eProsima/Micro-XRCE-DDS-Agent.git" "xrceagent"
-    WORKING_DIRECTORY "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src"
+    WORKING_DIRECTORY "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src"
     RESULT_VARIABLE error_code
   )
   math(EXPR number_of_tries "${number_of_tries} + 1")
@@ -42,7 +42,7 @@ endif()
 execute_process(
   COMMAND "/usr/bin/git"
           checkout "v2.4.3" --
-  WORKING_DIRECTORY "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
+  WORKING_DIRECTORY "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
   RESULT_VARIABLE error_code
 )
 if(error_code)
@@ -54,20 +54,20 @@ if(init_submodules)
   execute_process(
     COMMAND "/usr/bin/git" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
+    WORKING_DIRECTORY "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent"
     RESULT_VARIABLE error_code
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent'")
+  message(FATAL_ERROR "Failed to update submodules in: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt" "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitinfo.txt" "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'")
 endif()

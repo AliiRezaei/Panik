@@ -1,8 +1,8 @@
-# Install script for directory: /home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup
+# Install script for directory: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/microros_ws/install/micro_ros_setup")
+  set(CMAKE_INSTALL_PREFIX "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_setup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,11 +43,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micro_ros_setup")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/micro_ros_setup")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -55,7 +55,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup/environment" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup/environment" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,60 +63,60 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup/environment" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup/environment" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/packages/micro_ros_setup")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_index/share/ament_index/resource_index/packages/micro_ros_setup")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup/cmake" TYPE FILE FILES
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_core/micro_ros_setupConfig.cmake"
-    "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/ament_cmake_core/micro_ros_setupConfig-version.cmake"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_core/micro_ros_setupConfig.cmake"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_core/micro_ros_setupConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/micro_ros_setup" TYPE FILE FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/config" USE_SOURCE_PERMISSIONS)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/config" USE_SOURCE_PERMISSIONS)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/micro_ros_setup" TYPE PROGRAM FILES
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/create_ws.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/create_agent_ws.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/create_firmware_ws.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/configure_firmware.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/flash_firmware.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/build_firmware.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/build_agent.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/yaml_filter.py"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/clean_env.sh"
-    "/home/ali/STM32CubeIDE/microros_ws/src/micro_ros_setup/scripts/component"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/create_ws.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/create_agent_ws.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/create_firmware_ws.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/configure_firmware.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/flash_firmware.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/build_firmware.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/build_agent.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/yaml_filter.py"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/clean_env.sh"
+    "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/component"
     )
 endif()
 
@@ -128,5 +128,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_setup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

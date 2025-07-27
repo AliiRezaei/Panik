@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROSIDL_GENERATOR_C_BUILDING_DLL_micro_ros_msgs -DROS_PACKAGE_NAME=\"micro_ros_msgs\"
 
-CXX_INCLUDES = -I/home/ali/STM32CubeIDE/microros_ws/build/micro_ros_msgs/rosidl_generator_c -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_c
+CXX_INCLUDES = -I/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_c -isystem /opt/ros/jazzy/include/rosidl_runtime_c -isystem /opt/ros/jazzy/include/rcutils -isystem /opt/ros/jazzy/include/rosidl_typesupport_interface -isystem /opt/ros/jazzy/include/rosidl_typesupport_c
 
 CXX_FLAGS = -std=gnu++17 -fPIC -Wall
 

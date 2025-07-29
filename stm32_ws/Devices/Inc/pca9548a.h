@@ -25,6 +25,6 @@ typedef struct
 /*
  * @brief : read the joints states
  */
-void pca9548a_GetStates(PCA9548a_s *pca9548a, uint8_t sensor_id, float Tfd, float Tff);
+void pca9548a_GetStates(PCA9548a_s *pca9548a, LowPassFilter_s *lpf, uint8_t sensor_id);
 
 #endif /* DEVICES_INC_PCA9548A_H_ */

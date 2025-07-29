@@ -38,6 +38,7 @@ extern "C" {
 #include "adc.h"
 #include "dma.h"
 #include "i2c.h"
+#include "lpf.h"
 #include "as5600.h"
 #include "pca9548a.h"
 #include "iwdg.h"

@@ -70,6 +70,7 @@ bool controller_initialized = 0;
 bool filter_initialized     = 0;
 PIDController_s pid[NUM_JOINTS];
 LowPassFilter_s lpf[NUM_JOINTS];
+LowPassFilter_s lpf_qaxis;
 /* USER CODE END Variables */
 /* Definitions for jointStatesPublisherTask */
 osThreadId_t jointStatesPublisherTaskHandle;
@@ -428,7 +429,8 @@ void ControlLoop(float e, size_t joint_id)
 {
 	float elec_angle = pid_Operator(&pid[joint_id], e);
 //	float elec_angle = 0.0;
-	float Uq = 15.0, Ud = 0.0;
+	float Uq = lpf_Operator(&lpf_qaxis, 15.0f); // slow start-up
+	float Ud = 0.0;
 
 	// sin cos of elec_angle
 	float s_elec_angle = sin(elec_angle);
@@ -511,10 +513,12 @@ void InitControllers(void)
 
 void InitFilters(void)
 {
-	float Tfd = 0.1, Tff = 0.01;
+	float Tfd = 0.1, Tff = 0.05;
 	for (size_t i = 0; i < NUM_JOINTS; i++) {
 		lpf_Init(&lpf[i], Tff, Tfd);
 	}
+
+	lpf_Init(&lpf_qaxis, 0.5, Tfd);
 
 	filter_initialized = 1;
 }

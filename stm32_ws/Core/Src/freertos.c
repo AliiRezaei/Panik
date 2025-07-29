@@ -263,9 +263,9 @@ void JointStatesPublisherTask(void *argument)
 			joint_state_msg.position.data[i] = PCA9548a.position[i];
 			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
 			joint_state_msg.effort.data[i]   = TorqueEstimation(i);
-//			if (i == 0) {
-//				joint_state_msg.position.data[i] -= 0.37; // sensor 0 offset quick fix
-//			}
+			if (i == 0) {
+				joint_state_msg.position.data[i] -= 0.37; // sensor 0 offset quick fix
+			}
 		}
 
 		// Publish the message

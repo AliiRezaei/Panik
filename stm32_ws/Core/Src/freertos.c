@@ -65,9 +65,11 @@ sensor_msgs__msg__JointState joint_desired_msg;
 sensor_msgs__msg__JointState joint_state_msg;
 rcl_publisher_t publisher;
 rcl_subscription_t subscriber;
-bool microros_initialized = 0;
+bool microros_initialized   = 0;
 bool controller_initialized = 0;
+bool filter_initialized     = 0;
 PIDController_s pid[NUM_JOINTS];
+LowPassFilter_s lpf[NUM_JOINTS];
 /* USER CODE END Variables */
 /* Definitions for jointStatesPublisherTask */
 osThreadId_t jointStatesPublisherTaskHandle;
@@ -160,6 +162,7 @@ void ControlLoop(float e, size_t joint_id);
 void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id);
 float TorqueEstimation(uint8_t motor_id);
 void InitControllers(void);
+void InitFilters(void);
 /**
  * @brief  FreeRTOS initialization
  * @param  None
@@ -259,6 +262,9 @@ void JointStatesPublisherTask(void *argument)
 			joint_state_msg.position.data[i] = PCA9548a.position[i];
 			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
 			joint_state_msg.effort.data[i]   = TorqueEstimation(i);
+//			if (i == 0) {
+//				joint_state_msg.position.data[i] -= 0.37; // sensor 0 offset quick fix
+//			}
 		}
 
 		// Publish the message
@@ -296,17 +302,21 @@ void JointDesiredSubscriberTask(void *argument)
  */
 void JointStatesReadTask(void *argument)
 {
+	while (!filter_initialized) {
+		osDelay(10);
+	}
+
 	for (size_t i = 0; i < NUM_JOINTS; i++) {
 		PCA9548a.position[i]     = 0.0;
 		PCA9548a.prevPosition[i] = 0.0;
 		PCA9548a.velocity[i]     = 0.0;
 		PCA9548a.prevTick[i]     = 0;
 	}
-	float derivativeT = 0.1, filterT = 0.01;
+
 	for (;;)
 	{
 		for (uint8_t i = 0; i < NUM_JOINTS; i++) {
-			pca9548a_GetStates(&PCA9548a, i, derivativeT, filterT);
+			pca9548a_GetStates(&PCA9548a, &lpf[i], i);
 		}
 		osDelay(pdMS_TO_TICKS(10));
 	}
@@ -499,6 +509,16 @@ void InitControllers(void)
 	controller_initialized = 1;
 }
 
+void InitFilters(void)
+{
+	float Tfd = 0.1, Tff = 0.01;
+	for (size_t i = 0; i < NUM_JOINTS; i++) {
+		lpf_Init(&lpf[i], Tff, Tfd);
+	}
+
+	filter_initialized = 1;
+}
+
 float TorqueEstimation(uint8_t motor_id)
 {
 	float Kt = 1.9137; // torque constant for XM9025GB-SR
@@ -543,6 +563,9 @@ void InitTask(void *argument)
 
     // Init joints controller
     InitControllers();
+
+    // Init sensor filters
+    InitFilters();
 
     // Once done, delete this task
     vTaskDelete(NULL);

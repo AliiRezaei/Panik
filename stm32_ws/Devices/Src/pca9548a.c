@@ -8,14 +8,6 @@
 #include "main.h"
 
 /*
- * @brief : read the joints position from pca9548a
- */
-void pca9548a_GetPosition(PCA9548a_s *pca9548a, uint8_t sensor_id)
-{
-
-}
-
-/*
  * @brief : read the joints velocity from pca9548a
  */
 void pca9548a_GetStates(PCA9548a_s *pca9548a, LowPassFilter_s *lpf, uint8_t sensor_id)

@@ -89,7 +89,7 @@ float pid_Operator(PIDController_s *pid, float e)
 */
 
 void pid_Reset(PIDController_s *pid)
- {
+{
 	pid->e_prev   = 0.0f;
 	pid->integral_prev = 0.0f;
 	pid->output_prev = 0.0f;

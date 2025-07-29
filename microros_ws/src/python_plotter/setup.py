@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'states_plotter = python_plotter.states_plotter:main'
+            'states_plotter = python_plotter.states_plotter:main',
+            'tmp = python_plotter.tmp:main'
         ],
     },
 )

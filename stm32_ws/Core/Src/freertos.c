@@ -329,6 +329,8 @@ void JointStatesControlTask(void *argument)
 		osDelay(10);
 	}
 
+	float gear_coeffs[] = {1.0, 40.0/16.0, 70.0/16.0};
+
 	for (;;)
 	{
 		for (size_t joint_id = 0; joint_id < NUM_JOINTS; joint_id++) {
@@ -336,7 +338,7 @@ void JointStatesControlTask(void *argument)
 			float e = joint_desired_msg.position.data[joint_id] - joint_state_msg.position.data[joint_id];
 
 			// run control loop
-			ControlLoop(e, joint_id);
+			ControlLoop(e * gear_coeffs[joint_id], joint_id);
 			osDelay(pdMS_TO_TICKS(1));
 		}
 //		osDelay(pdMS_TO_TICKS(10));

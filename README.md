@@ -56,4 +56,9 @@ Echo joint_states Data
 ros2 topic echo /joint_states
 ```
 
+Translate joy to desired
+```
+ros2 run sidewinder_joystick joy_to_desired
+```
+
 

@@ -1,4 +1,3 @@
-# joy_to_joint.py
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy, JointState
@@ -10,7 +9,7 @@ class JoyToJoint(Node):
         self.pub = self.create_publisher(JointState, '/joint_desireds', 10)
         self.joint_names = ['joint1, joint2, joint3']
         # tune these scales for comfortable motion range
-        self.scales = [0.25, 0.5, 1.0]
+        self.scales = [-0.25, 0.5, 1.0]
 
     def cb(self, msg: Joy):
         # map joystick axes 0,1,2 to joints (adjust indices as needed)

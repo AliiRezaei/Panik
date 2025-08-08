@@ -266,6 +266,9 @@ void JointStatesPublisherTask(void *argument)
 			if (i == 0) {
 				joint_state_msg.position.data[i] -= 0.37; // sensor 0 offset quick fix
 			}
+			if (i == 2) {
+				joint_state_msg.position.data[i] += 0.30; // sensor 2 offset quick fix
+			}
 		}
 
 		// Publish the message

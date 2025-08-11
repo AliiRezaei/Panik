@@ -55,6 +55,14 @@ B: EV=20001b
 ```
 Note: The event number (event7) and joystick ID (js0) will be needed later.
 
+## Test Joystick Force Feedback
+
+Using *fftest* tool:
+```bash
+fftest /dev/input/event7
+```
+Note: replace *event7* with your own event number.
+
 ## Clone the Repository
 
 ```bash
@@ -106,6 +114,7 @@ It is ttyUSB0 for me.
 ros2 run micro_ros_agent micro_ros_agent serial -b 921600 --dev /dev/ttyUSB0
 ```
 Note: replace ttyUSB0 with your own port name.
+
 2. Verify topics:
 ```bash
 ros2 topic list

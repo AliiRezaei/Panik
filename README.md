@@ -4,8 +4,7 @@
 
 ---
 
-<!-- ![Wrist TeleRehab Robot](docs/robot_demo.png) -->
-<img src="docs/robot_picture.png" alt="Wrist TeleRehab Robot" width="500"/>
+![Wrist TeleRehab Robot](docs/robot_demo.png)
 
 
 ---

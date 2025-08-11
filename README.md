@@ -4,7 +4,7 @@
 
 ---
 
-![Wrist TeleRehab Robot](docs/robot_picture.png)
+![Wrist TeleRehab Robot](docs/robot_demo.png)
 
 ---
 

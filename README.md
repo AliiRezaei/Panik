@@ -6,7 +6,6 @@
 
 ![Wrist TeleRehab Robot](docs/robot_demo.png)
 
-
 ---
 
 ## Installation

@@ -20,6 +20,7 @@ __pycache__/
 
 # Local configuration files
 .env
+*.sh.env
 *.local
 
 # Documentation and generated files
@@ -35,3 +36,6 @@ colcon-*.log
 # Python virtual environments
 venv/
 .venv/
+
+# Data Logger
+*.csv

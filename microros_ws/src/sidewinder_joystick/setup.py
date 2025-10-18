@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joy_to_desired = sidewinder_joystick.joy_to_desired:main'
+            'joy_to_desired = sidewinder_joystick.joy_to_desired:main', 
+            'joint_logger = sidewinder_joystick.joint_logger:main'
         ],
     },
 )

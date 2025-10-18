@@ -433,9 +433,20 @@ void InitMicroROS(void)
 void ControlLoop(float e, size_t joint_id)
 {
 	float elec_angle = pid_Operator(&pid[joint_id], e);
-//	float elec_angle = 0.0;
 	float Uq = lpf_Operator(&lpf_qaxis, 15.0f); // slow start-up
 	float Ud = 0.0;
+//	float theta = joint_state_msg.position.data[joint_id];
+//	float w     = joint_state_msg.velocity.data[joint_id];
+//	float theta_d = joint_desired_msg.position.data[joint_id];
+//	float w_d     = 0.0;
+//	float P = 15.0, D = 1.02;
+//	float elec_angle = 14 * theta;
+////	float Uq = -(P * (theta_d - theta) + D * (w_d - w));
+////	float Uq = -(P * (theta_d - 0.0) + D * (0.0 - w));
+//	float Uq = -(P * (0.0 - theta) + D * (0.0 - w));
+////	Uq = lpf_Operator(&lpf_qaxis, _constrain(-5.0*Uq, -15.0f, 15.0f)); // slow start-up
+//	Uq = lpf_Operator(&lpf_qaxis, Uq); // slow start-up
+//	float Ud = 0.0;
 
 	// sin cos of elec_angle
 	float s_elec_angle = sin(elec_angle);

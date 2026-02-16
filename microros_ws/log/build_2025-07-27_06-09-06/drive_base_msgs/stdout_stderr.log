@@ -1,4 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/CMakeCache.txt is different than the directory /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0mCMake Error: The source directory "/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.[0m
-gmake: *** [Makefile:1625: cmake_check_build_system] Error 1

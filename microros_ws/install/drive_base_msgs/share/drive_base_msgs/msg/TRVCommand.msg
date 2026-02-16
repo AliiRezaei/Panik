@@ -1,5 +1,1 @@
-# Command a mobile base by Translational and Rotational Velocity
-# Primarily intended for differential drive bases.
-drive_base_msgs/CommandHeader header
-float32 translational_velocity
-float32 rotational_velocity
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/drive_base/drive_base_msgs/msg/TRVCommand.msg

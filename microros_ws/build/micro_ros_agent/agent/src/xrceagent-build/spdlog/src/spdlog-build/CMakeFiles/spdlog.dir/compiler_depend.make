@@ -1920,6 +1920,8 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/stdout_sinks.cpp:
+
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
@@ -1928,17 +1930,17 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/unistd-decl.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_sinks.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
-/usr/include/x86_64-linux-gnu/bits/stat.h:
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
@@ -1952,11 +1954,9 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
-/usr/include/linux/types.h:
-
-/usr/include/linux/stddef.h:
-
 /usr/include/linux/close_range.h:
+
+/usr/include/fcntl.h:
 
 /usr/include/asm-generic/posix_types.h:
 
@@ -1964,17 +1964,15 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/spdlog-inl.h:
 
-/usr/include/fcntl.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/logger-inl.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/registry-inl.h:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/os-inl.h:
+
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg_buffer-inl.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/fmt_helper.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/usr/include/unistd.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg-inl.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/common-inl.h:
 
@@ -2012,25 +2010,35 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/bundled/format-inl.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/rotating_file_sink.h:
-
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/rotating_file_sink-inl.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/basic_file_sink.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/basic_file_sink-inl.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/base_sink.h:
+/usr/include/x86_64-linux-gnu/bits/statx.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/base_sink-inl.h:
+/usr/include/unistd.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/file_helper.h:
 
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+/usr/include/linux/stddef.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/file_helper-inl.h:
 
 /usr/include/c++/13/array:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_color_sinks.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/ansicolor_sink.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/rotating_file_sink.h:
+
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/ansicolor_sink-inl.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/pattern_formatter.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/color_sinks.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
@@ -2039,6 +2047,8 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 /usr/include/c++/13/ostream:
 
 /usr/include/c++/13/istream:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_sinks.h:
 
 /usr/include/c++/13/ios:
 
@@ -2050,29 +2060,27 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/bits/sstream.tcc:
 
-/usr/include/c++/13/bits/ostream.tcc:
+/usr/include/linux/stat.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/base_sink.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/basic_ios.h:
 
-/usr/include/c++/13/algorithm:
-
-/usr/include/linux/stat.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/spdlog.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/synchronous_factory.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/cfg/helpers-inl.h:
+
+/usr/include/c++/13/algorithm:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/cfg.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
@@ -2080,39 +2088,33 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_sinks-inl.h:
+
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/color_sinks.cpp:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
 /usr/include/c++/13/ext/concurrence.h:
-
-/usr/include/c++/13/cctype:
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/x86_64-linux-gnu/bits/select-decl.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/fmt.cpp:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/pattern_formatter.h:
+/usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
 /usr/include/c++/13/ctime:
 
 /usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/cstdint:
+
+/usr/include/c++/13/cstdio:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -2122,7 +2124,13 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/console_globals.h:
+
 /usr/include/c++/13/clocale:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/bundled/format.h:
 
 /usr/include/c++/13/chrono:
 
@@ -2131,6 +2139,8 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/c++/13/cctype:
 
 /usr/include/c++/13/bits/vector.tcc:
 
@@ -2148,25 +2158,11 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
-/usr/include/c++/13/bits/unordered_map.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/os.h:
+/usr/include/c++/13/bits/stl_vector.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/thread_pool.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/thread_pool-inl.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+/usr/include/c++/13/bits/stl_tempbuf.h:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -2174,11 +2170,19 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/bits/stl_construct.h:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/fmt_helper.h:
+
 /usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
+/usr/include/c++/13/bits/stl_algobase.h:
+
 /usr/include/c++/13/exception:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -2190,6 +2194,174 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/compare:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/bits/stl_relops.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/13/cwchar:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/bundled/core.h:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/logger.h:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/locale.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/async.cpp:
+
+/usr/include/c++/13/bits/unordered_map.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/fmt.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/null_mutex.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/new:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/cfg/helpers.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/circular_q.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/thread_pool.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/tweakme.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/os.h:
+
+/usr/include/linux/types.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/periodic_worker.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/registry.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async_logger.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/c++/13/bits/this_thread_sleep.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
@@ -2200,117 +2372,9 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/tweakme.h:
+/usr/include/assert.h:
 
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/file_sinks.cpp:
-
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/compare:
-
-/usr/include/c++/13/system_error:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/os-inl.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/c++/13/bits/stl_relops.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/circular_q.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/bundled/format.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/fmt.cpp:
-
-/usr/include/locale.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/registry.h:
-
-/usr/include/c++/13/cstdio:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async_logger.h:
-
-/usr/include/c++/13/thread:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/features.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/stdout_sinks.cpp:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/fmt.h:
-
-/usr/include/c++/13/bits/stl_algobase.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/async.cpp:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/common.h:
-
-/usr/include/c++/13/functional:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/periodic_worker.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/stdio.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/pattern_formatter-inl.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async.h:
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
@@ -2320,95 +2384,53 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/formatter.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/periodic_worker-inl.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/backtracer.h:
-
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/version.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
 /usr/include/c++/13/bits/unique_lock.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/sink-inl.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/formatter.h:
 
 /usr/include/c++/13/mutex:
 
-/usr/include/c++/13/bits/allocated_ptr.h:
+/usr/include/asm-generic/types.h:
 
-/usr/include/c++/13/bit:
+/usr/include/asm-generic/bitsperlong.h:
 
-/usr/include/c++/13/bits/basic_string.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg_buffer.h:
 
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg-inl.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/assert.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/c++/13/new:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async_logger-inl.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/mpmc_blocking_q.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_color_sinks.h:
+/usr/include/c++/13/bits/invoke.h:
 
 /usr/include/c++/13/atomic:
 
 /usr/include/c++/13/bits/basic_string.h:
 
-/usr/include/c++/13/bits/invoke.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/file_sinks.cpp:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/sink.h:
-
-/usr/include/alloca.h:
+/usr/include/c++/13/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/13/bits/chrono.h:
+/usr/include/alloca.h:
 
 /usr/include/c++/13/cassert:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
 /usr/include/x86_64-linux-gnu/bits/types.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/periodic_worker-inl.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/13/bits/exception.h:
 
@@ -2420,49 +2442,21 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/13/typeinfo:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/fmt/bundled/core.h:
-
 /usr/include/c++/13/bits/exception_ptr.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/null_mutex.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/errno.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/bits/hashtable.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/backtracer-inl.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
 /usr/include/c++/13/ext/type_traits.h:
 
-/usr/include/limits.h:
+/usr/include/c++/13/functional:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/ansicolor_sink.h:
+/usr/include/limits.h:
 
 /usr/include/c++/13/bits/std_thread.h:
 
@@ -2490,9 +2484,13 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/stdexcept:
 
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/backtracer.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/13/string:
+
+/usr/include/c++/13/thread:
 
 /usr/include/c++/13/bits/nested_exception.h:
 
@@ -2510,11 +2508,11 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/c++/13/vector:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/cfg/helpers.h:
-
 /usr/include/ctype.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/features.h:
 
 /usr/include/c++/13/debug/debug.h:
 
@@ -2522,13 +2520,7 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/basic_file_sink.h:
-
 /usr/include/pthread.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
 
 /usr/include/stdc-predef.h:
 
@@ -2536,7 +2528,15 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/stdint.h:
 
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/stdio.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/pattern_formatter-inl.h:
+
 /usr/include/stdlib.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/common.h:
 
 /usr/include/string.h:
 
@@ -2548,9 +2548,9 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -2566,19 +2566,15 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/logger-inl.h:
-
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/thread_pool-inl.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -2600,15 +2596,19 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/cfg/helpers-inl.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/version.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/sink.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/sink-inl.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
@@ -2624,15 +2624,17 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
 /usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/log_msg_buffer.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/13/bits/charconv.h:
 
@@ -2644,25 +2646,29 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/src/cfg.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/logger.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/console_globals.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/base_sink-inl.h:
+
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/async_logger-inl.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -2674,18 +2680,12 @@ CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: /home/ali/STM32CubeIDE/stm32_uros_
 
 /usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/details/backtracer-inl.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
-
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog/include/spdlog/sinks/stdout_sinks-inl.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:

@@ -1,8 +1,1 @@
-msg/BaseInfo.idl
-msg/BaseInfo.msg
-msg/CommandHeader.idl
-msg/CommandHeader.msg
-msg/CommandStatus.idl
-msg/CommandStatus.msg
-msg/TRVCommand.idl
-msg/TRVCommand.msg
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/drive_base_msgs

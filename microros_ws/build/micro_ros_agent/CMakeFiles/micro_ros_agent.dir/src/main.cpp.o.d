@@ -246,10 +246,11 @@ CMakeFiles/micro_ros_agent.dir/src/main.cpp.o: \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/details/null_mutex.h \
  /usr/include/c++/13/atomic \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/fmt.h \
- /usr/include/fmt/core.h /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/core.h \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/fmt/format.h /usr/include/c++/13/cmath /usr/include/math.h \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/format.h \
+ /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -270,7 +271,8 @@ CMakeFiles/micro_ros_agent.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/fmt/core.h \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/core.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/details/registry.h \
  /usr/include/c++/13/mutex /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
@@ -283,7 +285,8 @@ CMakeFiles/micro_ros_agent.dir/src/main.cpp.o: \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/version.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/details/synchronous_factory.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/ostr.h \
- /usr/include/fmt/ostream.h /usr/include/fmt/format.h \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/ostream.h \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bundled/format.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/fmt/bin_to_hex.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/sinks/stdout_sinks.h \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/include/spdlog/details/console_globals.h \
@@ -709,21 +712,21 @@ CMakeFiles/micro_ros_agent.dir/src/main.cpp.o: \
  /opt/ros/jazzy/include/rmw/rmw/features.h \
  /opt/ros/jazzy/include/rmw/rmw/subscription_options.h \
  /opt/ros/jazzy/include/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp/message_type_support.h \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp \
- /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/graph.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/graph__struct.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/node__struct.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/entity__struct.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/graph__builder.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/graph__traits.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/node__traits.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/entity__traits.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/graph__type_support.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/node.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/node__builder.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/node__type_support.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/entity.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/entity__builder.hpp \
+ /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/rosidl_generator_cpp/micro_ros_msgs/msg/detail/entity__type_support.hpp \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent/include/agent/graph_manager/graph_typesupport.hpp \
  /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro-ROS-Agent/micro_ros_agent/include/agent/utils/demangle.hpp

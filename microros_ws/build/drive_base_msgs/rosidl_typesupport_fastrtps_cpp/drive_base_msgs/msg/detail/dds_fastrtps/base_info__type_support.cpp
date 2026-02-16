@@ -190,7 +190,7 @@ cdr_deserialize(
   cdr >> ros_message.safety_state;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 
 size_t

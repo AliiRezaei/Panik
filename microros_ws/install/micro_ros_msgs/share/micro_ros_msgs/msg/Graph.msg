@@ -1,1 +1,1 @@
-Node[] nodes
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/uros/micro_ros_msgs/msg/Graph.msg

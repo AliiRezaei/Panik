@@ -102,7 +102,7 @@ cdr_deserialize(
   cdr >> ros_message.rotational_velocity;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 
 size_t

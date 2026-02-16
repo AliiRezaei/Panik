@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef DRIVE_BASE_MSGS__MSG__TRV_COMMAND_HPP_
-#define DRIVE_BASE_MSGS__MSG__TRV_COMMAND_HPP_
-
-#include "drive_base_msgs/msg/detail/trv_command__struct.hpp"
-#include "drive_base_msgs/msg/detail/trv_command__builder.hpp"
-#include "drive_base_msgs/msg/detail/trv_command__traits.hpp"
-#include "drive_base_msgs/msg/detail/trv_command__type_support.hpp"
-
-#endif  // DRIVE_BASE_MSGS__MSG__TRV_COMMAND_HPP_
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_generator_cpp/drive_base_msgs/msg/trv_command.hpp

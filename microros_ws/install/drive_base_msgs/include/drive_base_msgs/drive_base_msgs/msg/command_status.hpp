@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef DRIVE_BASE_MSGS__MSG__COMMAND_STATUS_HPP_
-#define DRIVE_BASE_MSGS__MSG__COMMAND_STATUS_HPP_
-
-#include "drive_base_msgs/msg/detail/command_status__struct.hpp"
-#include "drive_base_msgs/msg/detail/command_status__builder.hpp"
-#include "drive_base_msgs/msg/detail/command_status__traits.hpp"
-#include "drive_base_msgs/msg/detail/command_status__type_support.hpp"
-
-#endif  // DRIVE_BASE_MSGS__MSG__COMMAND_STATUS_HPP_
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_generator_cpp/drive_base_msgs/msg/command_status.hpp

@@ -169,7 +169,7 @@ micro_ros_agent: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/
 micro_ros_agent: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so
 micro_ros_agent: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so
 micro_ros_agent: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.3
-micro_ros_agent: /opt/ros/jazzy/lib/libfastrtps.so.2.14.4
+micro_ros_agent: /opt/ros/jazzy/lib/libfastrtps.so.2.14.5
 micro_ros_agent: /opt/ros/jazzy/lib/librmw_dds_common__rosidl_typesupport_c.so
 micro_ros_agent: /opt/ros/jazzy/lib/librmw_dds_common.so
 micro_ros_agent: /opt/ros/jazzy/lib/librmw_dds_common__rosidl_typesupport_cpp.so
@@ -192,8 +192,7 @@ micro_ros_agent: /opt/ros/jazzy/lib/libfoonathan_memory-0.7.3.a
 micro_ros_agent: /usr/lib/x86_64-linux-gnu/libtinyxml2.so.10.0.0
 micro_ros_agent: /usr/lib/x86_64-linux-gnu/libssl.so
 micro_ros_agent: /usr/lib/x86_64-linux-gnu/libcrypto.so
-micro_ros_agent: /usr/lib/x86_64-linux-gnu/libspdlog.so.1.12.0
-micro_ros_agent: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
+micro_ros_agent: /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/install/micro_ros_agent/lib/libspdlog.a
 micro_ros_agent: CMakeFiles/micro_ros_agent.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable micro_ros_agent"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/micro_ros_agent.dir/link.txt --verbose=$(VERBOSE)

@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_setup/ament_cmake_environment_hooks/path.dsv

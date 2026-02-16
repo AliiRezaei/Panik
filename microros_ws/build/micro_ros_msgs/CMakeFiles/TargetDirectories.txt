@@ -10,7 +10,7 @@
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/ament_cmake_python_copy_micro_ros_msgs.dir
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/ament_cmake_python_symlink_micro_ros_msgs.dir
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/ament_cmake_python_build_micro_ros_msgs_egg.dir
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir
 /home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/CMakeFiles/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.dir

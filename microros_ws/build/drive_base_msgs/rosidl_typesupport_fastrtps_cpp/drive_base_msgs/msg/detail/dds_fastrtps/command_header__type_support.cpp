@@ -102,7 +102,7 @@ cdr_deserialize(
   cdr >> ros_message.expected_period;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 
 size_t

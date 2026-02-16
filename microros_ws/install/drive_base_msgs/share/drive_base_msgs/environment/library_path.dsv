@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/ament_cmake_environment_hooks/library_path.dsv

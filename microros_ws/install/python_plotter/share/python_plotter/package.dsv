@@ -4,3 +4,6 @@ source;share/python_plotter/hook/pythonpath.sh
 source;share/python_plotter/hook/ament_prefix_path.ps1
 source;share/python_plotter/hook/ament_prefix_path.dsv
 source;share/python_plotter/hook/ament_prefix_path.sh
+source;../../build/python_plotter/share/python_plotter/hook/pythonpath_develop.ps1
+source;../../build/python_plotter/share/python_plotter/hook/pythonpath_develop.dsv
+source;../../build/python_plotter/share/python_plotter/hook/pythonpath_develop.sh

@@ -41,6 +41,9 @@ venv/
 *.csv
 
 
+# Pythin swp files
+*.swp
+
 # inner repos
 stm32_ws/micro_ros_stm32cubemx_utils/
 microros_ws/src/micro_ros_setup/

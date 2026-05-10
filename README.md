@@ -139,5 +139,5 @@ ros2 run sidewinder_joystick joy_to_desired
 ```
 
 ## Conclusion
-Panik enables seamless communication between the Wrist TeleRehab Robot and ROS 2 through STM32 + micro-ROS.
+Panik enables communication between the Wrist TeleRehab Robot and ROS 2 through STM32 + micro-ROS.
 Feel free to contribute, suggest improvements, or open issues for troubleshooting.

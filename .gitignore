@@ -44,8 +44,17 @@ venv/
 # Pythin swp files
 *.swp
 
-# inner repos
+# Inner repos
 stm32_ws/micro_ros_stm32cubemx_utils/
 microros_ws/src/micro_ros_setup/
 microros_ws/src/uros/
+
+# Matlab temp files
+slprj/
+*.asv
+*.slxc
+*.slx.autosave
+*.slx.r2024b
+*.slx.r2021b
+*.slx.original
 

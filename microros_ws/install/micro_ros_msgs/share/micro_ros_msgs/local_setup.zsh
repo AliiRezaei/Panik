@@ -1,1 +1,0 @@
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_msgs/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,1 +1,0 @@
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/micro_ros_agent/ament_cmake_core/micro_ros_agentConfig.cmake

@@ -1,1 +1,0 @@
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/src/micro_ros_setup/scripts/clean_env.sh

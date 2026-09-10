@@ -1,1 +1,0 @@
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_typesupport_introspection_cpp/drive_base_msgs/msg/detail/trv_command__rosidl_typesupport_introspection_cpp.hpp

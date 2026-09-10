@@ -1,1 +1,0 @@
-/home/ali/STM32CubeIDE/stm32_uros_ws/Panik/microros_ws/build/drive_base_msgs/rosidl_generator_c/drive_base_msgs/msg/detail/base_info__type_support.h

@@ -27,4 +27,10 @@ typedef struct
  */
 void pca9548a_GetStates(PCA9548a_s *pca9548a, LowPassFilter_s *lpf, uint8_t sensor_id);
 
+
+/*
+ * @brief : states reading and estimation
+ */
+void pca9548a_GetStates_HighGain(PCA9548a_s *pca9548a, HighGainObsv_s *obsv, uint8_t sensor_id);
+
 #endif /* DEVICES_INC_PCA9548A_H_ */

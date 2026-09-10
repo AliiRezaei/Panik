@@ -43,6 +43,7 @@ Peripherals/Src/dma.c \
 Peripherals/Src/usart.c \
 Utils/Src/pid.c \
 Utils/Src/lpf.c \
+Utils/Src/observer.c \
 Devices/Src/as5600.c \
 Devices/Src/pca9548a.c \
 Core/Src/stm32f4xx_it.c \

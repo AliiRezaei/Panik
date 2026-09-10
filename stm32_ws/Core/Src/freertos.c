@@ -71,6 +71,7 @@ bool filter_initialized     = 0;
 PIDController_s pid[NUM_JOINTS];
 LowPassFilter_s lpf[NUM_JOINTS];
 LowPassFilter_s lpf_qaxis;
+HighGainObsv_s  obsv[NUM_JOINTS];
 /* USER CODE END Variables */
 /* Definitions for jointStatesPublisherTask */
 osThreadId_t jointStatesPublisherTaskHandle;
@@ -159,11 +160,18 @@ void InitTask(void *argument);
 void InitMicroROS(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
-void ControlLoop(float e, size_t joint_id);
+void ControlLoop(float e, float tau, size_t joint_id);
+
+void ControlLoopNew(float e, float tau, size_t joint_id);
+
 void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id);
 float TorqueEstimation(uint8_t motor_id);
+float TorqueEstimationNew(uint8_t motor_id, float Vq);
+float GetDGZ(float theta, float Ua, float Ub, float Uc);
+float WrapAngle(float angle);
 void InitControllers(void);
 void InitFilters(void);
+void InitObserversANDqAxisFilter(void);
 /**
  * @brief  FreeRTOS initialization
  * @param  None
@@ -262,12 +270,13 @@ void JointStatesPublisherTask(void *argument)
 		for (size_t i = 0; i < NUM_JOINTS; i++) {
 			joint_state_msg.position.data[i] = PCA9548a.position[i];
 			joint_state_msg.velocity.data[i] = PCA9548a.velocity[i];
-			joint_state_msg.effort.data[i]   = TorqueEstimation(i);
+//			joint_state_msg.effort.data[i]   = TorqueEstimation(i);
+//			joint_state_msg.effort.data[i]   = 0.0f;
 			if (i == 0) {
-				joint_state_msg.position.data[i] -= 0.37; // sensor 0 offset quick fix
+				joint_state_msg.position.data[i] += 0.30; // sensor 0 offset quick fix
 			}
 			if (i == 2) {
-				joint_state_msg.position.data[i] += 0.30; // sensor 2 offset quick fix
+				joint_state_msg.position.data[i] -= 0.37; // sensor 2 offset quick fix
 			}
 		}
 
@@ -279,7 +288,8 @@ void JointStatesPublisherTask(void *argument)
 
 		GPIOB->ODR ^= GPIO_ODR_OD4;
 		HAL_IWDG_Refresh(&hiwdg);
-		osDelay(pdMS_TO_TICKS(1));
+//		osDelay(pdMS_TO_TICKS(1));
+		vTaskDelay(pdMS_TO_TICKS(10));
 	}
 }
 
@@ -294,7 +304,8 @@ void JointDesiredSubscriberTask(void *argument)
 	{
 		rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1));  // check every 100ms
 //		rclc_executor_fini(&executor);
-		osDelay(pdMS_TO_TICKS(1));
+		vTaskDelay(pdMS_TO_TICKS(10));
+//		osDelay(pdMS_TO_TICKS(1));
 	}
 }
 
@@ -309,6 +320,8 @@ void JointStatesReadTask(void *argument)
 	while (!filter_initialized) {
 		osDelay(10);
 	}
+	TickType_t lastWake = xTaskGetTickCount();
+	const TickType_t period = pdMS_TO_TICKS(10);
 
 	for (size_t i = 0; i < NUM_JOINTS; i++) {
 		PCA9548a.position[i]     = 0.0;
@@ -320,9 +333,13 @@ void JointStatesReadTask(void *argument)
 	for (;;)
 	{
 		for (uint8_t i = 0; i < NUM_JOINTS; i++) {
-			pca9548a_GetStates(&PCA9548a, &lpf[i], i);
+//			pca9548a_GetStates(&PCA9548a, &lpf[i], i);
+			pca9548a_GetStates_HighGain(&PCA9548a, &obsv[i], i);
+//			GPIOB->ODR ^= GPIO_ODR_OD1;
 		}
-		osDelay(pdMS_TO_TICKS(10));
+
+//		osDelay(pdMS_TO_TICKS(10));
+		vTaskDelayUntil(&lastWake, period);
 	}
 }
 
@@ -332,18 +349,29 @@ void JointStatesControlTask(void *argument)
 		osDelay(10);
 	}
 
-	float gear_coeffs[] = {1.0, 40.0/16.0, 70.0/16.0};
+//	float gear_coeffs[] = {1.0, 40.0/16.0, 70.0/16.0};
+	TickType_t lastWake = xTaskGetTickCount();
+	const TickType_t period = pdMS_TO_TICKS(1);
 
 	for (;;)
 	{
 		for (size_t joint_id = 0; joint_id < NUM_JOINTS; joint_id++) {
 			// error calculation
-			float e = joint_desired_msg.position.data[joint_id] - joint_state_msg.position.data[joint_id];
+//			float e = joint_desired_msg.position.data[joint_id] - joint_state_msg.position.data[joint_id];
+			float e = joint_desired_msg.position.data[joint_id];
+
+			// torque command
+			float tau = joint_desired_msg.effort.data[joint_id];
 
 			// run control loop
-			ControlLoop(e * gear_coeffs[joint_id], joint_id);
-			osDelay(pdMS_TO_TICKS(1));
+//			ControlLoop(e * gear_coeffs[joint_id], tau, joint_id);
+			ControlLoop(e, tau, joint_id);
+//			ControlLoopNew(e, tau, joint_id);
+//			osDelay(pdMS_TO_TICKS(1));
+			vTaskDelayUntil(&lastWake, period);
 		}
+//		GPIOB->ODR ^= GPIO_ODR_OD1;
+//		vTaskDelayUntil(&lastWake, period);
 //		osDelay(pdMS_TO_TICKS(10));
 	}
 }
@@ -389,7 +417,7 @@ void InitMicroROS(void)
 	rclc_support_init(&support, 0, NULL, &allocator);
 
 	// create node
-	rclc_node_init_default(&node, "cubemx_node", "", &support);
+	rclc_node_init_default(&node, "stm32_node", "", &support);
 
 	// Initialize subscriber
 	rclc_subscription_init_best_effort(
@@ -430,17 +458,25 @@ void InitMicroROS(void)
 
 }
 
-void ControlLoop(float e, size_t joint_id)
+void ControlLoop(float e, float tau, size_t joint_id)
 {
-	float elec_angle = pid_Operator(&pid[joint_id], e);
-	float Uq = lpf_Operator(&lpf_qaxis, 15.0f); // slow start-up
+//	float elec_angle = pid_Operator(&pid[joint_id], e);
+	float elec_angle = e;
+//	float elec_angle = 14.0 * joint_state_msg.position.data[joint_id];
+//	float elec_angle = WrapAngle(pid_Operator(&pid[joint_id], e));
+//	float elec_angle = pid_Operator(&pid[joint_id], tau);
+//	float elec_angle = tau;
+	float Uq = tau; // slow start-up
+//	float Uq = pid_Operator(&pid[joint_id], tau);
+//	float Uq = tau;
+//	float Uq = lpf_Operator(&lpf_qaxis, tau); // slow start-up
 	float Ud = 0.0;
 //	float theta = joint_state_msg.position.data[joint_id];
 //	float w     = joint_state_msg.velocity.data[joint_id];
 //	float theta_d = joint_desired_msg.position.data[joint_id];
 //	float w_d     = 0.0;
 //	float P = 15.0, D = 1.02;
-//	float elec_angle = 14 * theta;
+//	float elec_angle = WrapAngle(14 * theta);
 ////	float Uq = -(P * (theta_d - theta) + D * (w_d - w));
 ////	float Uq = -(P * (theta_d - 0.0) + D * (0.0 - w));
 //	float Uq = -(P * (0.0 - theta) + D * (0.0 - w));
@@ -458,27 +494,104 @@ void ControlLoop(float e, size_t joint_id)
 
 	// clarke transform
 	float Ua = Ualpha;
-	float Ub = - 1/2 * Ualpha + sqrt(3)/2 * Ubeta;
-	float Uc = - 1/2 * Ualpha - sqrt(3)/2 * Ubeta;
+	float Ub = - 0.5f * Ualpha + 0.5f * sqrt(3.0f) * Ubeta;
+	float Uc = - 0.5f * Ualpha - 0.5f * sqrt(3.0f) * Ubeta;
 
 	// center
-	float center = 15 / 2;
+	float center = 24.0f / 2.0f; // changed. old value = 15 / 2
 
 	// midpoint clamp
 	float Umin = fmin(Ua, fmin(Ub, Uc));
 	float Umax = fmax(Ua, fmax(Ub, Uc));
-	center = center - (Umax + Umin) / 2;
+	center = center - 0.5f * (Umax + Umin);
+
+//	// centered modulation
+//	Ua = _constrain(Ua - Umin, 0.0, 24.0);
+//	Ub = _constrain(Ub - Umin, 0.0, 24.0);
+//	Uc = _constrain(Uc - Umin, 0.0, 24.0);
 
 	// centered modulation
-	Ua = _constrain(Ua - Umin, 0.0, 24.0);
-	Ub = _constrain(Ub - Umin, 0.0, 24.0);
-	Uc = _constrain(Uc - Umin, 0.0, 24.0);
+	Ua = _constrain(Ua + center, 0.0f, 24.0f); // changed
+	Ub = _constrain(Ub + center, 0.0f, 24.0f);
+	Uc = _constrain(Uc + center, 0.0f, 24.0f);
 
-	float dc_a = _constrain(Ua / 24, 0.0, 1.0);
-	float dc_b = _constrain(Ub / 24, 0.0, 1.0);
-	float dc_c = _constrain(Uc / 24, 0.0, 1.0);
+
+//	float gear_coeffs[] = {1.0, 40.0/16.0, 70.0/16.0};
+//	// pole pairs
+//	float pp = 14.0;
+//
+//	//
+//	float theta = joint_state_msg.position.data[joint_id] * gear_coeffs[joint_id] * pp;
+//	float Uq_tmp = GetDGZ(theta, Ua, Ub, Uc);
+//	joint_state_msg.effort.data[joint_id] = Uq_tmp;
+
+//	joint_state_msg.effort.data[joint_id] = TorqueEstimationNew(joint_id, Uq_tmp);
+
+
+	float dc_a = _constrain(Ua / 24.0, 0.0, 1.0);
+	float dc_b = _constrain(Ub / 24.0, 0.0, 1.0);
+	float dc_c = _constrain(Uc / 24.0, 0.0, 1.0);
 
 	SetPWM(dc_a, dc_b, dc_c, joint_id);
+}
+
+void ControlLoopNew(float e, float tau, size_t joint_id)
+{
+	// electrical angle
+	float elec_angle = 14.0 * joint_state_msg.position.data[joint_id];
+
+	// dq voltages
+ 	float Uq = tau;
+ 	float Ud = 0.0;
+
+	// dc-link voltage
+	const float Vdc = 24.0f;
+
+	// linear SVPWM voltage limit
+	const float Vmax = Vdc * 0.5773502692f;   // Vdc/sqrt(3)
+
+    // limit dq voltage vector
+    float U_mag = sqrtf(Ud * Ud + Uq * Uq);
+    if (U_mag > Vmax)
+    {
+        float scale = Vmax / U_mag;
+
+        Ud *= scale;
+        Uq *= scale;
+    }
+
+	// sin cos of elec_angle
+	float s_elec_angle = sin(elec_angle);
+	float c_elec_angle = cos(elec_angle);
+
+	// inverse park transform
+	float Ualpha = c_elec_angle * Ud - s_elec_angle * Uq;
+	float Ubeta  = s_elec_angle * Ud + c_elec_angle * Uq;
+
+	// inverse clarke transform
+    const float SQRT3_BY_2 = 0.8660254038f;
+    float Ua = Ualpha;
+    float Ub = -0.5f * Ualpha + SQRT3_BY_2 * Ubeta;
+    float Uc = -0.5f * Ualpha - SQRT3_BY_2 * Ubeta;
+
+	// centered SVPWM
+    float Umin = fminf(Ua, fminf(Ub, Uc));
+    float Umax = fmaxf(Ua, fmaxf(Ub, Uc));
+    float Vcm  = -0.5f * (Umax + Umin);
+    Ua += Vcm;
+    Ub += Vcm;
+    Uc += Vcm;
+
+    // convert phase voltages to duty cycles
+    float dc_a = 0.5f + Ua / Vdc;
+    float dc_b = 0.5f + Ub / Vdc;
+    float dc_c = 0.5f + Uc / Vdc;
+    dc_a = _constrain(dc_a, 0.0f, 1.0f);
+    dc_b = _constrain(dc_b, 0.0f, 1.0f);
+    dc_c = _constrain(dc_c, 0.0f, 1.0f);
+
+    // PWM generation
+    SetPWM(dc_a, dc_b, dc_c, joint_id);
 }
 
 void SetPWM(float dc_phase_a, float dc_phase_b, float dc_phase_c, size_t joint_id)
@@ -530,12 +643,38 @@ void InitControllers(void)
 void InitFilters(void)
 {
 	float Tfd = 0.1, Tff = 0.05;
+//	float Tfd = 0.05, Tff = 0.005;
 	for (size_t i = 0; i < NUM_JOINTS; i++) {
 		lpf_Init(&lpf[i], Tff, Tfd);
 	}
 
 	lpf_Init(&lpf_qaxis, 0.5, Tfd);
 
+	filter_initialized = 1;
+}
+
+void InitObserversANDqAxisFilter(void)
+{
+	// observer initial states
+	ObsvStates_s x_hat0;
+	x_hat0.pos = 0.0;
+	x_hat0.vel = 0.0;
+
+	// design params
+	float alpha1 = 6.0;
+	float alpha2 = 5.0;
+	float eps    = 0.1;
+
+	// initialization
+	for (size_t i = 0; i < NUM_JOINTS; i++) {
+		observer_Init(&obsv[i], x_hat0, alpha1, alpha2, eps);
+	}
+
+	// init q-axis low-pass filter
+	float Tfd = 0.1, Tff = 0.5;
+	lpf_Init(&lpf_qaxis, Tff, Tfd);
+
+	// flag
 	filter_initialized = 1;
 }
 
@@ -576,6 +715,55 @@ float TorqueEstimation(uint8_t motor_id)
 	return torque;
 }
 
+float TorqueEstimationNew(uint8_t motor_id, float Vq)
+{
+	float gear_coeffs[] = {1.0, 40.0/16.0, 70.0/16.0};
+	float Ke = 1.9137 / 5.0;   // back-emf constant for XM9025GB-SR
+	float Kt = 0.6 * Ke;       // torque constant for XM9025GB-SR
+	float pp = 14; // pole-pairs
+	float lambda = Ke / pp;
+
+	float R = 34.3; // phase resistance
+	float w  = joint_state_msg.velocity.data[motor_id];
+	float we = w * gear_coeffs[motor_id] * pp;
+	float torque = Kt * (Vq - we * lambda) / R;
+	return torque;
+}
+
+float GetDGZ(float theta, float Ua, float Ub, float Uc)
+{
+
+//	// pole pairs
+//	float p = 14.0;
+
+	// wrap elec angle
+	theta = WrapAngle(theta);
+
+	// calculate q axis value
+	float M_PI_2_3 = 2.0 * M_PI / 3.0;
+	float Uq =   sqrt(2)/3 * (cos(theta) * Ua + cos(theta - M_PI_2_3) * Ub + cos(theta + M_PI_2_3) * Uc);
+//	float Uq = - sqrt(2)/3 * (sin(theta) * Ua + sin(theta - M_PI_2_3) * Ub + sin(theta + M_PI_2_3) * Uc);
+
+	return Uq;
+}
+
+float WrapAngle(float angle)
+{
+	double two_pi = 2.0 * M_PI;
+
+	double wrapped_angle = fmod(angle, two_pi) - M_PI;
+
+	if (wrapped_angle < 0)
+		wrapped_angle += two_pi;
+
+	if (wrapped_angle == 0.0 && angle > 0.0)
+		wrapped_angle = two_pi;
+
+	float wrapped_angle_float = (float)wrapped_angle; // This line added
+
+	return wrapped_angle_float;
+}
+
 void InitTask(void *argument)
 {
 	// Init Micro-ROS
@@ -585,7 +773,8 @@ void InitTask(void *argument)
     InitControllers();
 
     // Init sensor filters
-    InitFilters();
+//    InitFilters();
+    InitObserversANDqAxisFilter();
 
     // Once done, delete this task
     vTaskDelete(NULL);

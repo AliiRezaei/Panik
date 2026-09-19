@@ -58,3 +58,8 @@ slprj/
 *.slx.r2021b
 *.slx.original
 
+# from matlab_ws
+matlab_ws/Imp/
+matlab_ws/Sim/
+
+
